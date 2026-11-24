@@ -71,6 +71,7 @@ export function ContactForm() {
         error={Boolean(errors.message)}
         errorMessage={errors.message}
       />
+      <p className="text-small text-ink-muted">* Required fields</p>
       <div className="flex flex-col items-start gap-4">
         <Button type="submit" size="lg">
           Send message

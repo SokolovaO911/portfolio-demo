@@ -34,6 +34,7 @@ export function FormField({
   rows = 6,
   className = "",
   type = "text",
+  required = false,
   "aria-describedby": describedBy,
   ...rest
 }: FormFieldProps) {
@@ -55,7 +56,7 @@ export function FormField({
     <div className={["flex flex-col gap-2", className].filter(Boolean).join(" ")}>
       <label htmlFor={id} className="text-caption uppercase text-ink">
         {label}
-        {rest.required ? <span aria-hidden="true"> *</span> : null}
+        {required ? <span aria-hidden="true">{" *"}</span> : null}
       </label>
       {multiline ? (
         <textarea
@@ -64,6 +65,7 @@ export function FormField({
           aria-invalid={error ? true : undefined}
           aria-describedby={describedByIds}
           className={`${fieldClasses} resize-y`}
+          required={required}
           {...(rest as unknown as ComponentPropsWithoutRef<"textarea">)}
         />
       ) : (
@@ -73,6 +75,7 @@ export function FormField({
           aria-invalid={error ? true : undefined}
           aria-describedby={describedByIds}
           className={fieldClasses}
+          required={required}
           {...rest}
         />
       )}
