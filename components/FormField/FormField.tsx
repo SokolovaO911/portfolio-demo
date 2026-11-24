@@ -55,6 +55,7 @@ export function FormField({
     <div className={["flex flex-col gap-2", className].filter(Boolean).join(" ")}>
       <label htmlFor={id} className="text-caption uppercase text-ink">
         {label}
+        {rest.required ? <span aria-hidden="true"> *</span> : null}
       </label>
       {multiline ? (
         <textarea
