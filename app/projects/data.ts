@@ -23,18 +23,18 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "fosterlink",
-    title: "FosterLink",
+    slug: "website-redesign",
+    title: "Website Redesign",
     summary:
-      "Helping animals find safe temporary homes and connecting them with caring people.",
-    cover: coverFosterlink,
-    coverAlt: "FosterLink app screens",
-    coverPosition: "top",
-    caseImage: caseFosterlink,
-    caseImageAlt: "FosterLink case study: research, flows, wireframes and screens",
-    type: "Student project, mobile app",
-    duration: "About 1 month",
-    role: "UI/UX design (solo project)",
+      "A fresh, lively redesign of a website for adventure games and team events.",
+    cover: coverRedesign,
+    coverAlt: "Redesigned website shown on a desktop screen",
+    caseImage: caseRedesign,
+    caseImageAlt:
+      "Website redesign case study: research, prototype, moodboard, web design and UI kit",
+    type: "Student project, website redesign",
+    duration: "2 weeks",
+    role: "UI/UX and web design (solo project)",
     tools: "Figma",
   },
   {
@@ -53,18 +53,18 @@ export const projects: Project[] = [
     tools: "Figma",
   },
   {
-    slug: "website-redesign",
-    title: "Website Redesign",
+    slug: "fosterlink",
+    title: "FosterLink",
     summary:
-      "A fresh, lively redesign of a website for adventure games and team events.",
-    cover: coverRedesign,
-    coverAlt: "Redesigned website shown on a desktop screen",
-    caseImage: caseRedesign,
-    caseImageAlt:
-      "Website redesign case study: research, prototype, moodboard, web design and UI kit",
-    type: "Student project, website redesign",
-    duration: "2 weeks",
-    role: "UI/UX and web design (solo project)",
+      "Helping animals find safe temporary homes and connecting them with caring people.",
+    cover: coverFosterlink,
+    coverAlt: "FosterLink app screens",
+    coverPosition: "top",
+    caseImage: caseFosterlink,
+    caseImageAlt: "FosterLink case study: research, flows, wireframes and screens",
+    type: "Student project, mobile app",
+    duration: "About 1 month",
+    role: "UI/UX design (solo project)",
     tools: "Figma",
   },
 ];
