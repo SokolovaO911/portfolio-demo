@@ -60,10 +60,10 @@ export default function Home() {
           src={decorHand}
           alt=""
           aria-hidden="true"
-          sizes="(min-width: 768px) 25vw, 50vw"
-          className="pointer-events-none z-10 ml-auto w-1/2 -scale-x-100 md:absolute md:left-0 md:top-0 md:ml-0 md:w-1/4 md:-translate-y-1/4 md:scale-x-100"
+          sizes="(min-width: 768px) 33vw, 50vw"
+          className="pointer-events-none z-10 ml-auto w-1/2 -scale-x-100 md:absolute md:-left-20 md:top-0 md:ml-0 md:w-1/3 md:-translate-y-1/4 md:scale-x-100"
         />
-        <ul className="grid gap-6 md:ml-auto md:w-3/4 md:grid-cols-3">
+        <ul className="grid gap-6 md:ml-auto md:w-5/6 md:grid-cols-3">
           {projects.map((project) => (
             <li key={project.slug} className="flex">
               <WorkCard
