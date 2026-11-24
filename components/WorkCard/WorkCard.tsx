@@ -24,8 +24,8 @@ export type WorkCardProps = {
 };
 
 const card =
-  "group flex flex-col gap-4 rounded-card border border-accent bg-canvas p-4 text-ink font-sans " +
-  "hover:border-ink hover:bg-ink hover:text-canvas " +
+  "group flex flex-col gap-4 rounded-card border border-accent bg-accent p-4 text-canvas font-sans " +
+  "hover:bg-canvas hover:text-ink " +
   "focus-visible:outline-2 focus-visible:outline-offset-2";
 
 const focusBySurface = {
