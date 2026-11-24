@@ -1,5 +1,6 @@
 import Image from "next/image";
 import aboutPhoto from "@/assets/about-photo.jpg";
+import decorPaperclip from "@/assets/decor-paperclip.png";
 
 export const metadata = { title: "About — Olha Sokolova" };
 
@@ -40,12 +41,18 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-      <div className="md:col-span-1">
+      <div className="relative mt-8 md:col-span-1 md:mt-0">
+        <Image
+          src={decorPaperclip}
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-8 left-2/3 z-10 w-1/5 rotate-6"
+        />
         <Image
           src={aboutPhoto}
           alt="Portrait of Olha Sokolova with the Eiffel Tower behind her"
           sizes="(min-width: 768px) 33vw, 100vw"
-          className="aspect-portrait w-full object-cover"
+          className="aspect-portrait w-full rotate-2 object-cover"
         />
       </div>
     </section>

@@ -2,13 +2,21 @@ import Image from "next/image";
 import { Button } from "@/components/Button/Button";
 import { WorkCard } from "@/components/WorkCard/WorkCard";
 import heroPhoto from "@/assets/hero-photo.jpg";
+import decorSquiggle from "@/assets/decor-squiggle.png";
+import decorHand from "@/assets/decor-hand.png";
 import { projects } from "./projects/data";
 
 export default function Home() {
   return (
     <>
       <section className="grid gap-8 md:grid-cols-3 md:items-center">
-        <div className="md:col-span-1">
+        <div className="relative md:col-span-1">
+          <Image
+            src={decorSquiggle}
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none absolute -left-6 top-0 z-10 hidden h-full w-auto md:block"
+          />
           <Image
             src={heroPhoto}
             alt="Portrait of Olha Sokolova"
@@ -41,11 +49,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section aria-labelledby="home-projects" className="flex flex-col gap-6">
-        <h2 id="home-projects" className="text-heading text-ink">
+      <section
+        aria-labelledby="home-projects"
+        className="grid gap-6 md:grid-cols-4"
+      >
+        <Image
+          src={decorHand}
+          alt=""
+          aria-hidden="true"
+          sizes="(min-width: 768px) 25vw, 50vw"
+          className="pointer-events-none ml-auto w-1/2 -scale-x-100 md:col-start-1 md:row-span-2 md:ml-0 md:self-start md:w-full md:scale-x-100"
+        />
+        <h2
+          id="home-projects"
+          className="text-heading text-ink md:col-span-3 md:col-start-2"
+        >
           Projects
         </h2>
-        <ul className="grid gap-6 md:grid-cols-3">
+        <ul className="grid gap-6 md:col-span-3 md:col-start-2 md:grid-cols-3">
           {projects.map((project) => (
             <li key={project.slug} className="flex">
               <WorkCard

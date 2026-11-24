@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { Button } from "@/components/Button/Button";
+import decorHand from "@/assets/decor-hand-contact.png";
 
 export const metadata = { title: "Contact — Olha Sokolova" };
 
@@ -8,6 +10,7 @@ const linkStyle =
 
 export default function ContactsPage() {
   return (
+    <div className="relative flex flex-col gap-section">
     <section className="flex max-w-prose flex-col gap-section">
       <div className="flex flex-col gap-4">
         <h1 className="text-heading text-accent">Let’s connect</h1>
@@ -75,5 +78,13 @@ export default function ContactsPage() {
         </div>
       </section>
     </section>
+    <Image
+      src={decorHand}
+      alt=""
+      aria-hidden="true"
+      sizes="(min-width: 768px) 40vw, 100vw"
+      className="pointer-events-none w-full md:absolute md:bottom-0 md:right-0 md:w-2/5"
+    />
+    </div>
   );
 }
