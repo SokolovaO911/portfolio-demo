@@ -6,7 +6,7 @@ export const metadata = { title: "About — Olha Sokolova" };
 
 export default function AboutPage() {
   return (
-    <section className="grid gap-8 md:grid-cols-3">
+    <section className="grid gap-8 md:grid-cols-3 md:items-center">
       <div className="flex flex-col gap-6 md:col-span-2">
         <h1 className="text-heading text-ink">
           Hi, I’m Olha, a junior UI/UX designer.
