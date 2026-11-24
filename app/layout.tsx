@@ -13,7 +13,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="overflow-x-clip">
         <SiteHeader />
         <main className="mx-auto flex w-full max-w-content flex-col gap-section px-4 pb-section pt-8 md:px-6">
           {children}

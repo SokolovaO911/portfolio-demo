@@ -82,8 +82,8 @@ export default function ContactsPage() {
       src={decorHand}
       alt=""
       aria-hidden="true"
-      sizes="(min-width: 768px) 40vw, 100vw"
-      className="pointer-events-none w-full md:absolute md:bottom-0 md:right-0 md:w-2/5"
+      sizes="(min-width: 768px) 50vw, 100vw"
+      className="pointer-events-none w-full md:absolute md:bottom-0 md:right-0 md:w-1/2 md:translate-x-1/6"
     />
     </div>
   );

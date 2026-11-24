@@ -9,13 +9,13 @@ import { projects } from "./projects/data";
 export default function Home() {
   return (
     <>
-      <section className="grid gap-8 md:grid-cols-3 md:items-center">
+      <section className="grid gap-8 md:grid-cols-3 md:items-center md:pl-section">
         <div className="relative md:col-span-1">
           <Image
             src={decorSquiggle}
             alt=""
             aria-hidden="true"
-            className="pointer-events-none absolute -left-6 top-0 z-10 hidden h-full w-auto md:block"
+            className="pointer-events-none absolute right-full top-0 z-10 hidden h-full w-auto md:block"
           />
           <Image
             src={heroPhoto}
@@ -51,22 +51,19 @@ export default function Home() {
 
       <section
         aria-labelledby="home-projects"
-        className="grid gap-6 md:grid-cols-4"
+        className="relative flex flex-col gap-6 md:mt-8"
       >
+        <h2 id="home-projects" className="sr-only">
+          Projects
+        </h2>
         <Image
           src={decorHand}
           alt=""
           aria-hidden="true"
-          sizes="(min-width: 768px) 25vw, 50vw"
-          className="pointer-events-none ml-auto w-1/2 -scale-x-100 md:col-start-1 md:row-span-2 md:ml-0 md:self-start md:w-full md:scale-x-100"
+          sizes="(min-width: 768px) 33vw, 50vw"
+          className="pointer-events-none z-10 ml-auto w-1/2 -scale-x-100 md:absolute md:left-0 md:top-0 md:ml-0 md:w-1/3 md:-translate-y-1/4 md:scale-x-100"
         />
-        <h2
-          id="home-projects"
-          className="text-heading text-ink md:col-span-3 md:col-start-2"
-        >
-          Projects
-        </h2>
-        <ul className="grid gap-6 md:col-span-3 md:col-start-2 md:grid-cols-3">
+        <ul className="grid gap-6 md:ml-auto md:w-5/6 md:grid-cols-3">
           {projects.map((project) => (
             <li key={project.slug} className="flex">
               <WorkCard
