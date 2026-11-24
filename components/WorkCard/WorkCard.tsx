@@ -18,8 +18,8 @@ export type WorkCardProps = {
 };
 
 const card =
-  "group flex flex-col gap-4 rounded-card bg-accent p-4 text-canvas font-sans " +
-  "hover:bg-ink " +
+  "group flex flex-col gap-4 rounded-card bg-ink p-4 text-canvas font-sans " +
+  "hover:bg-accent " +
   "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
 /**
