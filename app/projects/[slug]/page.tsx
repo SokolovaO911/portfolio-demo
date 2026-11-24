@@ -20,6 +20,8 @@ const linkStyle =
   "text-body text-accent underline underline-offset-4 hover:text-ink " +
   "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
+const ctaLinkStyle = linkStyle.replace("text-body", "text-lead font-medium");
+
 export default async function ProjectPage({ params }: { params: Promise<Params> }) {
   const { slug } = await params;
   const index = projects.findIndex((item) => item.slug === slug);
@@ -63,7 +65,7 @@ export default async function ProjectPage({ params }: { params: Promise<Params> 
         <Button href="/" variant="secondary" size="lg">
           Back to home
         </Button>
-        <Link href={`/projects/${next.slug}`} className={linkStyle}>
+        <Link href={`/projects/${next.slug}`} className={ctaLinkStyle}>
           Next project: {next.title} →
         </Link>
       </div>
