@@ -37,7 +37,7 @@ export function ContactForm() {
     window.location.href =
       `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}` +
       `&body=${encodeURIComponent(body)}`;
-    setNote("Opening your email app…");
+    setNote("Opening your e-mail app…");
   }
 
   return (
