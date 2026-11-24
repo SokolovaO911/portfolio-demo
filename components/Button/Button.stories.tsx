@@ -1,7 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { Button } from "./Button";
+import type { ButtonProps } from "./Button";
 
-const meta = {
+// Для сторі беремо варіант «кнопка» (без href), щоб Controls працювали з простими пропсами.
+type ButtonStoryProps = Extract<ButtonProps, { href?: undefined }>;
+
+const meta: Meta<ButtonStoryProps> = {
   title: "Components/Button",
   component: Button,
   decorators: [
@@ -25,9 +29,9 @@ const meta = {
     disabled: false,
     disabledReason: "Fill in all fields to send your message.",
   },
-} satisfies Meta<typeof Button>;
+};
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<ButtonStoryProps>;
 
 export const Playground: Story = {};
