@@ -27,7 +27,7 @@ export function SiteHeader() {
       <div className="flex items-center gap-8">
         <Navigation items={items} activeHref={activeHref} />
         <div className="hidden md:block">
-          <Button href="/get-in-touch" size="md">
+          <Button href="/get-in-touch" size="lg">
             Get in touch
           </Button>
         </div>
