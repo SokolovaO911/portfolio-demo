@@ -1,0 +1,77 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs/blocks";
+
+<Meta title="Foundations/Tokens" />
+
+# Токени
+
+Єдине джерело значень — блок `@theme` у `app/globals.css`. Тут показано те, що в ньому оголошено.
+
+## Кольори
+
+<ColorPalette>
+  <ColorItem title="canvas" subtitle="Фон сторінки" colors={["var(--color-canvas)"]} />
+  <ColorItem title="surface" subtitle="Поля форми" colors={["var(--color-surface)"]} />
+  <ColorItem title="line" subtitle="Декоративні лінії" colors={["var(--color-line)"]} />
+  <ColorItem title="accent" subtitle="Кнопки, картки, посилання, фокус" colors={["var(--color-accent)"]} />
+  <ColorItem title="ink" subtitle="Основний текст" colors={["var(--color-ink)"]} />
+  <ColorItem title="ink-muted" subtitle="Приглушений текст, межа поля" colors={["var(--color-ink-muted)"]} />
+  <ColorItem title="danger" subtitle="Помилка" colors={["var(--color-danger)"]} />
+</ColorPalette>
+
+## Текст
+
+<div className="bg-canvas p-6 text-ink">
+  <div className="text-display">text-display</div>
+  <div className="text-heading">text-heading</div>
+  <div className="text-lead">text-lead</div>
+  <div className="text-body">text-body</div>
+  <div className="text-small">text-small</div>
+  <div className="text-caption uppercase">text-caption</div>
+</div>
+
+## Радіуси
+
+Кути прямі: `rounded-control` і `rounded-card` дорівнюють нулю.
+
+<div className="flex gap-6 bg-canvas p-6 text-ink">
+  <div className="rounded-control border border-ink-muted p-4 text-small">rounded-control</div>
+  <div className="rounded-card border border-line p-4 text-small">rounded-card</div>
+</div>
+
+## Пропорції
+
+<div className="flex flex-wrap items-end gap-6 bg-canvas p-6 text-ink">
+  <div className="w-40">
+    <div className="aspect-portrait bg-surface" />
+    <div className="mt-2 text-caption">aspect-portrait</div>
+  </div>
+  <div className="w-64">
+    <div className="aspect-cover bg-surface" />
+    <div className="mt-2 text-caption">aspect-cover</div>
+  </div>
+  <div className="w-40">
+    <div className="aspect-case-logo bg-accent" />
+    <div className="mt-2 text-caption">aspect-case-logo</div>
+  </div>
+</div>
+
+## Відступи
+
+Дозволено лише п'ять кроків: 2, 3, 4, 6, 8 у класах (`p-2`, `gap-4`).
+
+<div className="flex items-end gap-6 bg-canvas p-6 text-ink">
+  <div><div className="size-2 bg-accent" /><div className="mt-2 text-caption">2</div></div>
+  <div><div className="size-3 bg-accent" /><div className="mt-2 text-caption">3</div></div>
+  <div><div className="size-4 bg-accent" /><div className="mt-2 text-caption">4</div></div>
+  <div><div className="size-6 bg-accent" /><div className="mt-2 text-caption">6</div></div>
+  <div><div className="size-8 bg-accent" /><div className="mt-2 text-caption">8</div></div>
+</div>
+
+## Розкладка
+
+<div className="bg-canvas p-6 text-ink">
+  <div className="max-w-content bg-surface p-4 text-small">max-w-content: ширина контенту сторінки</div>
+  <div className="mt-4 max-w-prose bg-surface p-4 text-small">max-w-prose: ширина колонки тексту</div>
+  <div className="mt-4 w-4 bg-accent h-section" />
+  <div className="mt-2 text-caption">h-section: відстань між великими секціями</div>
+</div>

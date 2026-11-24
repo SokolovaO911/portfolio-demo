@@ -1,0 +1,58 @@
+import { Meta, Canvas, Controls } from "@storybook/addon-docs/blocks";
+import * as NavigationStories from "./Navigation.stories";
+
+<Meta of={NavigationStories} />
+
+# Navigation
+
+Меню сайту: Projects, About Me, Contact. На широкому екрані пункти стоять у ряд. На вузькому екрані меню згортається в кнопку, а відкрите показується поверх контенту, не зсуваючи сторінку вниз.
+
+<Canvas of={NavigationStories.Playground} />
+
+<Controls of={NavigationStories.Playground} />
+
+Вузький екран дивись через кнопку Viewport у тулбарі Storybook.
+
+## Параметри
+
+| Параметр | Значення | За замовчуванням |
+| --- | --- | --- |
+| `items` | список пунктів: підпис і адреса | обовʼязковий |
+| `activeHref` | адреса активного пункту | немає |
+| `className` | додаткові класи для розміщення | порожньо |
+
+## Варіанти і стани
+
+- Default: текст `ink` (17,8:1 до фону).
+- Hover: текст стає `accent` (14,3:1).
+- Активний пункт: текст `accent` і підкреслення, тож активність видно не лише кольором. Позначається `aria-current="page"`.
+- Focus клавішею Tab: контур `accent` завтовшки 2 px із відступом 2 px, контраст до фону 14,3:1.
+- Вузький екран: кнопка Menu (вторинна кнопка), відкрите меню лежить поверх контенту на фоні `surface` з межею `line`. Закривається клавішею Escape (фокус повертається на кнопку) або вибором пункту.
+
+## Токени
+
+- Кольори: `ink`, `accent`, `surface`, `line`.
+- Текст: `text-lead` (пункти).
+- Відступи: `gap-8` між пунктами в ряд, `p-4` і `gap-2` у відкритому меню на вузькому екрані.
+- Кнопка Menu: компонент `Button` (вторинний).
+
+## Коли використовувати
+
+- Один раз у шапці кожної сторінки.
+- Адресу активного пункту передавай із поточного шляху сторінки (`usePathname`).
+- Для дії на сторінці використовуй `Button`, а не пункт меню.
+
+## Як брати в код
+
+```tsx
+import { Navigation } from "@/components/Navigation/Navigation";
+
+<Navigation
+  items={[
+    { label: "Projects", href: "/projects" },
+    { label: "About Me", href: "/about" },
+    { label: "Contact", href: "/contacts" },
+  ]}
+  activeHref="/projects"
+/>
+```

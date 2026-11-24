@@ -24,7 +24,7 @@
 - Радіуси: `rounded-control`, `rounded-card`. Обидва 0: кути прямі.
 - Пропорції: `aspect-portrait` (3:4), `aspect-cover` (16:9), `aspect-case-logo` (2:1).
 - Відступи: 8, 12, 16, 24, 32 px (числа 2, 3, 4, 6, 8 у класах). Між великими секціями: `section`.
-- Ширина контенту: `max-w-content` (1120 px).
+- Ширина контенту: `max-w-content` (1120 px), колонка тексту: `max-w-prose` (664 px).
 - Шрифт: Helvetica Neue, Helvetica, Arial (системний стек).
 
 ## Компоненти

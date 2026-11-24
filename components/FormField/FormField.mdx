@@ -1,0 +1,67 @@
+import { Meta, Canvas, Controls } from "@storybook/addon-docs/blocks";
+import * as FormFieldStories from "./FormField.stories";
+
+<Meta of={FormFieldStories} />
+
+# FormField
+
+Текстове поле з підписом над ним: імʼя, email, тема повідомлення. З `multiline` стає багаторядковим для довшого тексту. Підпис завжди стоїть над полем і звʼязаний із ним, тому скрінрідер читає їх разом.
+
+<Canvas of={FormFieldStories.Playground} />
+
+<Controls of={FormFieldStories.Playground} />
+
+## Параметри
+
+| Параметр | Значення | За замовчуванням |
+| --- | --- | --- |
+| `label` | підпис над полем | обовʼязковий |
+| `defaultValue` | початкове значення поля | порожньо |
+| `placeholder` | підказка в порожньому полі | немає |
+| `error` | `true`, `false` | `false` |
+| `errorMessage` | текст помилки під полем | немає |
+| `disabled` | `true`, `false` | `false` |
+| `multiline` | `true`: багаторядкове поле | `false` |
+| `rows` | кількість рядків багаторядкового поля | `6` |
+| `type` | тип поля: `text`, `email`, `tel` | `text` |
+| `className` | додаткові класи для розміщення | порожньо |
+
+Усі інші атрибути поля (`name`, `required`, `onChange`) передаються далі як є.
+
+## Варіанти і стани
+
+- Default: заливка `surface`, межа `ink-muted` (5,7:1 до фону), текст `ink` (15,7:1).
+- Hover: межа стає `ink`.
+- Focus: контур `accent` завтовшки 2 px із відступом 2 px, контраст до фону 14,3:1.
+- Заповнене: те саме, що default, але з текстом. Перемикається полем `defaultValue` у Controls.
+- Помилка: межа `danger`, під полем іконка і текст помилки кольору `danger` (7,2:1 на фоні `canvas`). Поле позначається `aria-invalid`, текст помилки звʼязаний із ним через `aria-describedby`.
+- Disabled: фон `canvas`, текст `ink-muted`, курсор «заборонено».
+- Підказка-плейсхолдер: `ink-muted` на `surface`, 5,1:1.
+
+## Токени
+
+- Кольори: `surface`, `canvas`, `ink`, `ink-muted`, `danger`, `accent`.
+- Текст: `text-small` (поле, текст помилки), `text-caption` (підпис).
+- Радіус: `rounded-control` (кути прямі).
+- Відступи: `px-4 py-3` усередині поля, `gap-2` між підписом, полем і помилкою.
+
+## Коли використовувати
+
+- Для коротких відповідей у формі. Для довгого тексту (повідомлення) вмикай `multiline`.
+- Підпис пиши завжди, плейсхолдер його не замінює.
+- Текст помилки: що не так і що зробити («Enter a valid email address.»). Без слова «Error».
+
+## Як брати в код
+
+```tsx
+import { FormField } from "@/components/FormField/FormField";
+
+<FormField label="Name" name="name" placeholder="Your name" required />
+<FormField
+  label="Email"
+  type="email"
+  name="email"
+  error={!emailValid}
+  errorMessage="Enter a valid email address."
+/>
+```

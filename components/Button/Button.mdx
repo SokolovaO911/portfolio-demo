@@ -1,0 +1,59 @@
+import { Meta, Canvas, Controls } from "@storybook/addon-docs/blocks";
+import * as ButtonStories from "./Button.stories";
+
+<Meta of={ButtonStories} />
+
+# Button
+
+Кнопка для головних дій на сайті: «Get in touch», «View projects», «Send message». Без `href` це `<button>`, з `href` це посилання Next.js, яке виглядає як кнопка.
+
+<Canvas of={ButtonStories.Playground} />
+
+<Controls of={ButtonStories.Playground} />
+
+## Параметри
+
+| Параметр | Значення | За замовчуванням |
+| --- | --- | --- |
+| `variant` | `primary`, `secondary` | `primary` |
+| `size` | `md` (звичайний), `lg` (великий) | `md` |
+| `disabled` | `true`, `false` | `false` |
+| `disabledReason` | текст пояснення під вимкненою кнопкою | немає |
+| `href` | адреса; якщо задана, кнопка стає посиланням | немає |
+| `className` | додаткові класи для розміщення | порожньо |
+| `children` | текст кнопки | обовʼязковий |
+
+## Варіанти і стани
+
+- `primary`: заливка `accent`, текст `canvas`. Контраст тексту 14,3:1. Це головна дія на екрані.
+- `secondary`: без заливки, межа `ink-muted` (5,7:1 до фону), текст `ink` (17,8:1).
+- Наведення: у `primary` заливка стає `ink` (текст `canvas`, 17,8:1); у `secondary` межа і текст стають `accent` (14,3:1).
+- Фокус клавішею Tab: контур `accent` завтовшки 2 px із відступом 2 px, контраст до фону 14,3:1.
+- `disabled`: заливка `surface`, текст `ink-muted`. Кнопка лишається у фокусі і не спрацьовує, бо стан задано через `aria-disabled`, а не атрибут `disabled`.
+- `disabledReason`: текст під вимкненою кнопкою. Звʼязаний з кнопкою через `aria-describedby`, тож скрінрідер читає його разом із кнопкою.
+
+## Токени
+
+- Кольори: `accent`, `canvas`, `ink`, `ink-muted`, `surface`, `line`.
+- Текст: `text-lead` (розмір `lg`), `text-small` (розмір `md`), вага 500.
+- Радіус: `rounded-control` (кути прямі).
+- Відступи: `px-6 py-3` (md) і `px-8 py-4` (lg), між кнопкою й поясненням `gap-2`.
+
+## Коли використовувати
+
+- Одна кнопка `primary` на екран, поруч допускається одна `secondary`.
+- Дія на сторінці (відправити форму): кнопка без `href`. Перехід на іншу сторінку: з `href`.
+- Якщо дію зараз не можна виконати, лишай кнопку у фокусі (`disabled`) і завжди пиши `disabledReason`.
+- Не використовуй кнопку для пунктів меню: там звичайні посилання.
+
+## Як брати в код
+
+```tsx
+import { Button } from "@/components/Button/Button";
+
+<Button size="lg" href="/get-in-touch">Get in touch</Button>
+<Button variant="secondary" size="lg" href="/about">About me</Button>
+<Button type="submit" disabled={!isValid} disabledReason="Fill in all fields to send your message.">
+  Send message
+</Button>
+```

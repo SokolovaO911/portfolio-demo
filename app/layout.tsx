@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { SiteHeader } from "./SiteHeader";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Olha Sokolova — UI/UX Designer",
+  title: "Olha Sokolova — Junior UI/UX Designer",
   description:
-    "Junior UI/UX designer creating socially meaningful apps and platforms.",
+    "Junior UI/UX designer creating apps and platforms with social impact. Helping people achieve their goals without unnecessary steps.",
 };
 
 export default function RootLayout({
@@ -12,7 +13,12 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <SiteHeader />
+        <main className="mx-auto flex w-full max-w-content flex-col gap-section px-4 pb-section pt-8 md:px-6">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
