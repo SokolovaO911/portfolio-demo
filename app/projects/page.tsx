@@ -23,6 +23,7 @@ export default function ProjectsPage() {
               description={`${project.type}, ${project.duration.toLowerCase()}. ${project.summary}`}
               image={project.cover}
               imageAlt={project.coverAlt}
+                imagePosition={project.coverPosition}
               href={`/projects/${project.slug}`}
             />
           </li>

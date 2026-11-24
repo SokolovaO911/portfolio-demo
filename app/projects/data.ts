@@ -12,6 +12,7 @@ export type Project = {
   summary: string;
   cover: StaticImageData;
   coverAlt: string;
+  coverPosition?: "top" | "center";
   caseImage: StaticImageData;
   caseImageAlt: string;
   type: string;
@@ -28,6 +29,7 @@ export const projects: Project[] = [
       "Helping animals find safe temporary homes and connecting them with caring people.",
     cover: coverFosterlink,
     coverAlt: "FosterLink app screens",
+    coverPosition: "top",
     caseImage: caseFosterlink,
     caseImageAlt: "FosterLink case study: research, flows, wireframes and screens",
     type: "Student project, mobile app",

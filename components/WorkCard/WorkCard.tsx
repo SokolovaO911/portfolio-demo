@@ -11,6 +11,8 @@ export type WorkCardProps = {
   image: StaticImageData;
   /** Опис обкладинки для скрінрідера. */
   imageAlt: string;
+  /** Яку частину обкладинки лишати при обрізанні: верх або центр. */
+  imagePosition?: "top" | "center";
   /** Адреса сторінки кейсу. */
   href: string;
   /** Додаткові класи для розміщення (ширина, відступи зовні). */
@@ -31,6 +33,7 @@ export function WorkCard({
   description,
   image,
   imageAlt,
+  imagePosition = "center",
   href,
   className = "",
 }: WorkCardProps) {
@@ -40,7 +43,7 @@ export function WorkCard({
         src={image}
         alt={imageAlt}
         sizes="(min-width: 768px) 33vw, 100vw"
-        className="aspect-cover w-full object-cover"
+        className={`aspect-cover w-full object-cover ${imagePosition === "top" ? "object-top" : "object-center"}`}
       />
       <span className="flex flex-col gap-2">
         <span className="block text-lead">{title}</span>
