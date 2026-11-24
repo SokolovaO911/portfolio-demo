@@ -66,7 +66,7 @@ export default async function ProjectPage({ params }: { params: Promise<Params> 
           Back to home
         </Button>
         <Link href={`/projects/${next.slug}`} className={ctaLinkStyle}>
-          Next project: {next.title} →
+          Next project<span className="sr-only">: {next.title}</span> →
         </Link>
       </div>
     </>
