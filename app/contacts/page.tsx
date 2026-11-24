@@ -27,7 +27,7 @@ export default function ContactsPage() {
         </h2>
         <a
           href="mailto:okulevycholha@gmail.com"
-          className={`text-lead ${linkStyle}`}
+          className={`text-body ${linkStyle}`}
         >
           okulevycholha@gmail.com
         </a>
