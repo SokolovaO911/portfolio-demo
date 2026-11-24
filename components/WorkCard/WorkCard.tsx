@@ -15,6 +15,8 @@ export type WorkCardProps = {
   imagePosition?: "top" | "center";
   /** Адреса сторінки кейсу. */
   href: string;
+  /** Показувати назву текстом. Якщо обкладинка вже містить назву (логотип), вимкніть: назва лишається для скрінрідера. */
+  showTitle?: boolean;
   /** Додаткові класи для розміщення (ширина, відступи зовні). */
   className?: string;
 };
@@ -34,6 +36,7 @@ export function WorkCard({
   image,
   imageAlt,
   imagePosition = "center",
+  showTitle = true,
   href,
   className = "",
 }: WorkCardProps) {
@@ -46,7 +49,7 @@ export function WorkCard({
         className={`aspect-cover w-full object-cover ${imagePosition === "top" ? "object-top" : "object-center"}`}
       />
       <span className="flex flex-col gap-2">
-        <span className="block text-lead">{title}</span>
+        <span className={showTitle ? "block text-lead" : "sr-only"}>{title}</span>
         <span className="block text-small">{description}</span>
       </span>
     </Link>

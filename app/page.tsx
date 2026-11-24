@@ -73,6 +73,7 @@ export default function Home() {
                 image={project.cover}
                 imageAlt={project.coverAlt}
                 imagePosition={project.coverPosition}
+                showTitle={false}
                 href={`/projects/${project.slug}`}
               />
             </li>

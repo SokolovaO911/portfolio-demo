@@ -24,6 +24,7 @@ export default function ProjectsPage() {
               image={project.cover}
               imageAlt={project.coverAlt}
                 imagePosition={project.coverPosition}
+                showTitle={false}
               href={`/projects/${project.slug}`}
             />
           </li>
