@@ -28,7 +28,7 @@ export const projects: Project[] = [
     summary:
       "Helping animals find safe temporary homes and connecting them with caring people.",
     cover: coverFosterlink,
-    coverAlt: "FosterLink app screens",
+    coverAlt: "FosterLink logo",
     coverPosition: "top",
     caseImage: caseFosterlink,
     caseImageAlt: "FosterLink case study: research, flows, wireframes and screens",
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     summary:
       "Helping people understand their emotions, practice mindfulness, and find inner balance.",
     cover: coverMindfullmood,
-    coverAlt: "MindfullMood website screens",
+    coverAlt: "MindfullMood logo",
     caseImage: caseMindfullmood,
     caseImageAlt:
       "MindfullMood case study: research, personas, journey map, wireframes and screens",
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     summary:
       "A fresh, lively redesign of a website for adventure games and team events.",
     cover: coverRedesign,
-    coverAlt: "Redesigned website shown on a desktop screen",
+    coverAlt: "Spassim Team logo",
     caseImage: caseRedesign,
     caseImageAlt:
       "Website redesign case study: research, prototype, moodboard, web design and UI kit",
