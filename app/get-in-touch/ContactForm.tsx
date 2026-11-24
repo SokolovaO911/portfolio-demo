@@ -22,8 +22,8 @@ export function ContactForm() {
 
     const next: Errors = {};
     if (!name) next.name = "Enter your name.";
-    if (!email) next.email = "Enter your email address.";
-    else if (!/^\S+@\S+\.\S+$/.test(email)) next.email = "Enter a valid email address.";
+    if (!email) next.email = "Enter your e-mail address.";
+    else if (!/^\S+@\S+\.\S+$/.test(email)) next.email = "Enter a valid e-mail address.";
     if (!message) next.message = "Enter your message.";
 
     setErrors(next);
@@ -52,11 +52,11 @@ export function ContactForm() {
         errorMessage={errors.name}
       />
       <FormField
-        label="Email address"
+        label="E-mail address"
         name="email"
         type="email"
         autoComplete="email"
-        placeholder="Your email"
+        placeholder="Your e-mail"
         required
         error={Boolean(errors.email)}
         errorMessage={errors.email}
