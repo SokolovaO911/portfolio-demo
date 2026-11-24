@@ -19,8 +19,6 @@ export type WorkCardProps = {
   surface?: "canvas" | "accent";
   /** Показувати назву текстом. Якщо обкладинка вже містить назву (логотип), вимкніть: назва лишається для скрінрідера. */
   showTitle?: boolean;
-  /** Підпис дії під описом, зі стрілкою. */
-  actionLabel?: string;
   /** Додаткові класи для розміщення (ширина, відступи зовні). */
   className?: string;
 };
@@ -47,7 +45,6 @@ export function WorkCard({
   imagePosition = "center",
   surface = "canvas",
   showTitle = true,
-  actionLabel = "View project",
   href,
   className = "",
 }: WorkCardProps) {
@@ -61,9 +58,8 @@ export function WorkCard({
       />
       <span className="flex flex-col gap-2">
         <span className={showTitle ? "block text-lead" : "sr-only"}>{title}</span>
-        <span className="block text-small">{description}</span>
-        <span className="mt-2 block self-start text-small font-bold underline underline-offset-4 decoration-2">
-          {actionLabel} <span aria-hidden="true">→</span>
+        <span className="block text-small">
+          {description} <span aria-hidden="true">→</span>
         </span>
       </span>
     </Link>
