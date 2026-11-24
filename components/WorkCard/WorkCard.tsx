@@ -15,8 +15,6 @@ export type WorkCardProps = {
   imagePosition?: "top" | "center";
   /** Адреса сторінки кейсу. */
   href: string;
-  /** Фон, на якому лежить картка: на жовтому (accent) фокус показується темним контуром. */
-  surface?: "canvas" | "accent";
   /** Додаткові класи для розміщення (ширина, відступи зовні). */
   className?: string;
 };
@@ -24,12 +22,7 @@ export type WorkCardProps = {
 const card =
   "group flex flex-col gap-4 rounded-card border border-accent bg-canvas p-4 text-ink font-sans " +
   "hover:border-ink hover:bg-ink hover:text-canvas " +
-  "focus-visible:outline-2 focus-visible:outline-offset-2";
-
-const focusBySurface = {
-  canvas: "focus-visible:outline-accent",
-  accent: "focus-visible:outline-canvas",
-};
+  "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
 /**
  * Клікабельна картка роботи: обкладинка, назва, короткий опис.
@@ -41,12 +34,11 @@ export function WorkCard({
   image,
   imageAlt,
   imagePosition = "center",
-  surface = "canvas",
   href,
   className = "",
 }: WorkCardProps) {
   return (
-    <Link href={href} className={[card, focusBySurface[surface], className].filter(Boolean).join(" ")}>
+    <Link href={href} className={[card, className].filter(Boolean).join(" ")}>
       <Image
         src={image}
         alt={imageAlt}

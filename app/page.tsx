@@ -51,15 +51,11 @@ export default function Home() {
 
       <section
         aria-labelledby="home-projects"
-        className="relative flex flex-col gap-6 p-4 md:mt-8 md:p-6"
+        className="relative flex flex-col gap-6 md:mt-8"
       >
         <h2 id="home-projects" className="sr-only">
           Projects
         </h2>
-        <div
-          aria-hidden="true"
-          className="absolute inset-y-0 left-0 w-screen bg-accent"
-        />
         <Image
           src={decorHand}
           alt=""
@@ -67,7 +63,7 @@ export default function Home() {
           sizes="(min-width: 768px) 33vw, 50vw"
           className="pointer-events-none z-10 ml-auto w-1/2 -scale-x-100 md:absolute md:-left-10 md:top-0 md:ml-0 md:w-1/3 md:-translate-y-1/4 md:scale-x-100"
         />
-        <ul className="relative grid gap-6 md:ml-auto md:w-5/6 md:grid-cols-3">
+        <ul className="grid gap-6 md:ml-auto md:w-5/6 md:grid-cols-3">
           {projects.map((project) => (
             <li key={project.slug} className="flex">
               <WorkCard
@@ -77,7 +73,6 @@ export default function Home() {
                 image={project.cover}
                 imageAlt={project.coverAlt}
                 imagePosition={project.coverPosition}
-                surface="accent"
                 href={`/projects/${project.slug}`}
               />
             </li>
