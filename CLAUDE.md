@@ -29,7 +29,12 @@
 
 ## Компоненти
 
-Заповнимо далі.
+Усі лежать у `components/<Назва>/` разом з історією (`.stories.tsx`) і документацією (`.mdx`). Дивитися в Storybook (`npm run storybook`). Змінив компонент: онови історію й docs у тому ж кроці.
+
+- `Button`: прямокутна кнопка або посилання (`href`). Варіанти `primary`, `secondary`, розміри `md`, `lg`, стан `disabled` через `aria-disabled` і пояснення `disabledReason`.
+- `FormField`: поле форми з підписом над ним. Параметри `error`, `errorMessage`, `multiline`, `required` (зірочка після підпису).
+- `WorkCard`: клікабельна картка проєкту з обкладинкою `aspect-cover`. Параметри `imagePosition`, `showTitle`, `surface` (`canvas` або `accent`: від фону залежить колір фокусу).
+- `Navigation`: меню сайту. На вузькому екрані згортається в кнопку «Menu», Escape закриває.
 
 ## Правила
 
