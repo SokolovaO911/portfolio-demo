@@ -21,7 +21,8 @@ export default function AboutPage() {
             know this field not only from the outside: I have volunteered
             myself.
           </p>
-          <p className="md:col-span-5 lg:col-auto">
+          <div className="flex flex-col gap-4 md:col-span-5 lg:contents">
+          <p>
             That showed me that the wish to help is not enough: the process of
             helping has to be{" "}
             <em className="not-italic text-accent">simple, clear and accessible</em>
@@ -30,18 +31,19 @@ export default function AboutPage() {
             path from the wish to help to a real action, and I try to make that
             path short and clear.
           </p>
-          <p className="md:col-span-5 lg:col-auto">
+          <p>
             Despite my love for social projects, I don’t limit myself to them.
             My third project, a redesign of the website of a company that runs
             adventure games, shows that the same approach works in any field.
           </p>
+          </div>
           <p className="md:col-span-8 lg:col-auto">
             I’m now looking for a full-time job in UI/UX design in Freiburg and
             the surrounding area: remote, on-site or hybrid.
           </p>
         </div>
       </div>
-      <div className="relative mt-8 md:col-span-3 md:col-start-6 md:row-span-2 md:row-start-4 md:mt-0 lg:row-span-1 lg:row-start-1 lg:mt-section">
+      <div className="relative mt-8 md:col-span-3 md:col-start-6 md:row-start-4 md:mt-0 lg:row-start-1 lg:mt-section">
         <Image
           src={decorPaperclip}
           alt=""
