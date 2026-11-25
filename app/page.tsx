@@ -10,19 +10,20 @@ export default function Home() {
   return (
     <>
       <section className="flex flex-col gap-8 md:flex-row md:items-start md:gap-0 md:pb-8">
-        <div className="relative md:w-4/15 md:shrink-0">
-          <Image
-            src={decorSquiggle}
-            alt=""
-            aria-hidden="true"
-            className="pointer-events-none absolute right-full top-0 z-10 hidden h-full w-auto lg:block"
-          />
+        <div className="flex md:w-4/15 md:shrink-0 lg:w-19/60">
+          <div aria-hidden="true" className="hidden lg:block lg:w-3/19 lg:shrink-0">
+            <Image
+              src={decorSquiggle}
+              alt=""
+              className="pointer-events-none h-full w-full object-contain object-left"
+            />
+          </div>
           <Image
             src={heroPhoto}
             alt="Portrait of Olha Sokolova"
             priority
             sizes="(min-width: 768px) 27vw, 100vw"
-            className="aspect-portrait w-full object-cover"
+            className="aspect-portrait w-full min-w-0 flex-1 object-cover lg:w-auto"
           />
         </div>
         <div aria-hidden="true" className="hidden md:block md:w-1/15 md:shrink-0" />
