@@ -5,7 +5,7 @@ import * as FormFieldStories from "./FormField.stories";
 
 # FormField
 
-Текстове поле з підписом над ним: імʼя, email, тема повідомлення. З `multiline` стає багаторядковим для довшого тексту. Підпис завжди стоїть над полем і звʼязаний із ним, тому скрінрідер читає їх разом.
+Текстове поле з підписом над ним: імʼя, e-mail, тема повідомлення. З `multiline` стає багаторядковим для довшого тексту. Підпис завжди стоїть над полем і звʼязаний із ним, тому скрінрідер читає їх разом.
 
 <Canvas of={FormFieldStories.Playground} />
 
@@ -21,12 +21,15 @@ import * as FormFieldStories from "./FormField.stories";
 | `error` | `true`, `false` | `false` |
 | `errorMessage` | текст помилки під полем | немає |
 | `disabled` | `true`, `false` | `false` |
+| `required` | `true`: обовʼязкове поле, після підпису стоїть зірочка (для скрінрідера вона прихована, він читає «обовʼязкове») | `false` |
 | `multiline` | `true`: багаторядкове поле | `false` |
 | `rows` | кількість рядків багаторядкового поля | `6` |
 | `type` | тип поля: `text`, `email`, `tel` | `text` |
 | `className` | додаткові класи для розміщення | порожньо |
 
-Усі інші атрибути поля (`name`, `required`, `onChange`) передаються далі як є.
+Усі інші атрибути поля (`name`, `onChange`) передаються далі як є.
+
+Якщо в формі є обовʼязкові поля, додай під нею підказку «* Required fields», щоб було зрозуміло, що означає зірочка.
 
 ## Варіанти і стани
 
@@ -49,7 +52,7 @@ import * as FormFieldStories from "./FormField.stories";
 
 - Для коротких відповідей у формі. Для довгого тексту (повідомлення) вмикай `multiline`.
 - Підпис пиши завжди, плейсхолдер його не замінює.
-- Текст помилки: що не так і що зробити («Enter a valid email address.»). Без слова «Error».
+- Текст помилки: що не так і що зробити («Enter a valid e-mail address.»). Без слова «Error».
 
 ## Як брати в код
 
@@ -58,10 +61,10 @@ import { FormField } from "@/components/FormField/FormField";
 
 <FormField label="Name" name="name" placeholder="Your name" required />
 <FormField
-  label="Email"
+  label="E-mail"
   type="email"
   name="email"
   error={!emailValid}
-  errorMessage="Enter a valid email address."
+  errorMessage="Enter a valid e-mail address."
 />
 ```

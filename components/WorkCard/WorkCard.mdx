@@ -5,7 +5,7 @@ import * as WorkCardStories from "./WorkCard.stories";
 
 # WorkCard
 
-Клікабельна картка роботи: обкладинка, назва і короткий опис. Уся картка є одним посиланням на сторінку кейсу. Три такі картки стоять у розділі «Роботи» на головній і на сторінці проєктів.
+Клікабельна картка роботи: обкладинка, назва і короткий опис. Уся картка є одним посиланням на сторінку кейсу. Три такі картки стоять на головній (на жовтій підложці) і на сторінці проєктів. В кінці опису стоїть стрілка → як підказка, що картка відкривається.
 
 <Canvas of={WorkCardStories.Playground} />
 
@@ -20,18 +20,22 @@ import * as WorkCardStories from "./WorkCard.stories";
 | `image` | обкладинка, імпортована з `assets` | обовʼязковий |
 | `imageAlt` | опис обкладинки для скрінрідера | обовʼязковий |
 | `href` | адреса сторінки кейсу | обовʼязковий |
+| `imagePosition` | `center`, `top`: яку частину обкладинки лишати, коли її обрізає рамка 16:9 | `center` |
+| `showTitle` | `true`, `false`: показувати назву текстом. Вимкни, коли назва вже є на обкладинці (логотип): для скрінрідера вона лишається прихованим текстом | `true` |
+| `surface` | `canvas`, `accent`: на якому фоні лежить картка. Від цього залежить колір контуру фокуса | `canvas` |
 | `className` | додаткові класи для розміщення | порожньо |
 
 ## Варіанти і стани
 
-- Default: заливка `accent`, текст `canvas` (14,3:1).
-- Hover: заливка стає `ink`, текст лишається `canvas` (17,8:1).
-- Focus клавішею Tab: контур `accent` завтовшки 2 px із відступом 2 px, контраст до фону 14,3:1.
+- Default: заливка `accent`, межа `accent` 1 px, текст `canvas` (14,3:1).
+- Hover: заливка стає `canvas`, текст `ink` (17,8:1), межа `accent` лишається. На жовтій підложці картка в стані default зливається з нею, і її видно лише при наведенні.
+- Focus клавішею Tab: контур завтовшки 2 px із відступом 2 px. На фоні `canvas` він `accent` (14,3:1), на фоні `accent` (`surface="accent"`) він `canvas` (14,3:1): жовтий контур на жовтому не видно.
 - Обкладинка завжди має пропорцію `aspect-cover` (16:9), зайве обрізається по краях.
 
 ## Токени
 
 - Кольори: `accent`, `canvas`, `ink`.
+- Стрілка → в кінці опису прихована від скрінрідерів (`aria-hidden`).
 - Текст: `text-lead` (назва), `text-small` (опис).
 - Радіус: `rounded-card` (кути прямі).
 - Пропорція: `aspect-cover`.
@@ -54,7 +58,9 @@ import { WorkCard } from "@/components/WorkCard/WorkCard";
   title="FosterLink"
   description="A mobile app that helps people support animals from shelters."
   image={cover}
-  imageAlt="FosterLink app screens"
+  imageAlt="FosterLink logo"
   href="/projects/fosterlink"
+  showTitle={false}
+  surface="accent"
 />
 ```

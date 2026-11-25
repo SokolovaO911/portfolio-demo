@@ -18,6 +18,7 @@ const meta = {
     error: { control: "boolean" },
     errorMessage: { control: "text" },
     multiline: { control: "boolean" },
+    required: { control: "boolean", description: "Обовʼязкове поле: після підпису стоїть зірочка" },
     disabled: { control: "boolean" },
   },
   args: {
@@ -27,6 +28,7 @@ const meta = {
     error: false,
     errorMessage: "Enter a valid email address.",
     multiline: false,
+    required: false,
     disabled: false,
   },
   render: (args) => <FormField key={String(args.defaultValue)} {...args} />,

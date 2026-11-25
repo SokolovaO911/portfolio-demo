@@ -6,8 +6,12 @@ const meta = {
   title: "Components/WorkCard",
   component: WorkCard,
   decorators: [
-    (Story) => (
-      <div className="max-w-content bg-canvas p-6">
+    (Story, context) => (
+      <div
+        className={`max-w-content p-6 ${
+          context.args.surface === "accent" ? "bg-accent" : "bg-canvas"
+        }`}
+      >
         <Story />
       </div>
     ),
@@ -18,6 +22,20 @@ const meta = {
     imageAlt: { control: "text" },
     href: { control: "text" },
     image: { control: false },
+    imagePosition: {
+      control: "select",
+      options: ["center", "top"],
+      description: "Яку частину обкладинки лишати при обрізанні",
+    },
+    showTitle: {
+      control: "boolean",
+      description: "Вимкни, якщо назва вже є на обкладинці (логотип)",
+    },
+    surface: {
+      control: "select",
+      options: ["canvas", "accent"],
+      description: "Фон, на якому лежить картка",
+    },
   },
   args: {
     title: "Website Redesign",
@@ -26,6 +44,9 @@ const meta = {
     image: cover,
     imageAlt: "Redesigned website shown on a desktop screen",
     href: "/projects/website-redesign",
+    imagePosition: "center",
+    showTitle: true,
+    surface: "canvas",
   },
 } satisfies Meta<typeof WorkCard>;
 
