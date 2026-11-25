@@ -31,6 +31,10 @@ const meta = {
       control: "boolean",
       description: "Вимкни, якщо назва вже є на обкладинці (логотип)",
     },
+    meta: {
+      control: "text",
+      description: "Рядок над описом: тип і термін (порожньо: не показується)",
+    },
     surface: {
       control: "select",
       options: ["canvas", "accent"],

@@ -22,6 +22,7 @@ import * as WorkCardStories from "./WorkCard.stories";
 | `href` | адреса сторінки кейсу | обовʼязковий |
 | `imagePosition` | `center`, `top`: яку частину обкладинки лишати, коли її обрізає рамка 16:9 | `center` |
 | `showTitle` | `true`, `false`: показувати назву текстом. Вимкни, коли назва вже є на обкладинці (логотип): для скрінрідера вона лишається прихованим текстом | `true` |
+| `meta` | рядок над описом: тип і термін, наприклад «Mobile app · 1 month». Пишеться капсом (`text-caption`) | немає |
 | `surface` | `canvas`, `accent`: на якому фоні лежить картка. Від цього залежить колір контуру фокуса | `canvas` |
 | `className` | додаткові класи для розміщення | порожньо |
 
@@ -36,7 +37,7 @@ import * as WorkCardStories from "./WorkCard.stories";
 
 - Кольори: `accent`, `canvas`, `ink`.
 - Стрілка → в кінці опису прихована від скрінрідерів (`aria-hidden`).
-- Текст: `text-lead` (назва), `text-small` (опис).
+- Текст: `text-lead` (назва), `text-caption` капсом (`meta`), `text-small` (опис).
 - Радіус: `rounded-card` (кути прямі).
 - Пропорція: `aspect-cover`.
 - Відступи: `p-4` навколо вмісту, `gap-4` між обкладинкою і текстом, `gap-2` між назвою й описом.
@@ -61,6 +62,7 @@ import { WorkCard } from "@/components/WorkCard/WorkCard";
   imageAlt="FosterLink logo"
   href="/projects/fosterlink"
   showTitle={false}
+  meta="Mobile app · 1 month"
   surface="accent"
 />
 ```
