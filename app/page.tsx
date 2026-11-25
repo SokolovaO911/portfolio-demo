@@ -15,7 +15,7 @@ export default function Home() {
             <Image
               src={decorSquiggle}
               alt=""
-              className="pointer-events-none h-full w-full object-contain object-left"
+              className="pointer-events-none h-full w-full object-fill lg:object-contain lg:object-left"
             />
           </div>
           <Image
