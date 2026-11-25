@@ -6,7 +6,7 @@ export const metadata = { title: "About — Olha Sokolova" };
 
 export default function AboutPage() {
   return (
-    <section className="grid gap-8 md:grid-cols-3 md:items-center">
+    <section className="grid gap-8 md:grid-cols-3 md:items-start">
       <div className="flex flex-col gap-6 md:col-span-2">
         <h1 className="text-heading text-ink">
           Hi, I’m Olha, a junior UI/UX designer.
@@ -46,7 +46,7 @@ export default function AboutPage() {
           src={decorPaperclip}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute -top-8 left-2/3 z-10 w-1/5"
+          className="pointer-events-none absolute -top-8 left-3/4 z-10 w-1/5"
         />
         <Image
           src={aboutPhoto}
