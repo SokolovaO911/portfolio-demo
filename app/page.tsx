@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <section className="flex flex-col gap-8 md:flex-row md:items-start md:gap-0 md:pb-section">
         <div className="flex md:w-4/15 md:shrink-0 lg:w-19/60">
-          <div aria-hidden="true" className="hidden lg:block lg:w-3/19 lg:shrink-0">
+          <div aria-hidden="true" className="w-8 shrink-0 md:hidden lg:block lg:w-3/19">
             <Image
               src={decorSquiggle}
               alt=""
