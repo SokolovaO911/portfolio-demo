@@ -21,7 +21,7 @@ export default function AboutPage() {
             know this field not only from the outside: I have volunteered
             myself.
           </p>
-          <div className="flex flex-col gap-4 md:col-span-5 lg:contents">
+          <div className="flex flex-col gap-4 md:col-span-5 tablet:col-span-6 lg:contents">
           <p>
             That showed me that the wish to help is not enough: the process of
             helping has to be{" "}
@@ -43,7 +43,7 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-      <div className="relative mt-8 md:col-span-3 md:col-start-6 md:row-start-4 md:mb-6 md:mt-4 lg:row-start-2 lg:mb-0 lg:mt-0 lg:self-center xl:row-start-1 xl:mt-section xl:self-start">
+      <div className="relative mt-8 md:mt-0 md:col-span-3 md:col-start-6 md:row-start-4 md:self-center tablet:col-span-2 tablet:col-start-7 lg:col-span-3 lg:col-start-6 lg:row-start-2 lg:mb-0 lg:mt-0 lg:self-center xl:row-start-1 xl:mt-section xl:self-start">
         <Image
           src={decorPaperclip}
           alt=""
