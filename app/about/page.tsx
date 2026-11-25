@@ -43,7 +43,7 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-      <div className="relative mt-8 md:col-span-3 md:col-start-6 md:row-start-4 md:mb-6 md:mt-4 lg:row-start-1 lg:mb-0 lg:mt-section">
+      <div className="relative mt-8 md:col-span-3 md:col-start-6 md:row-start-4 md:mb-6 md:mt-4 lg:row-start-1 lg:mb-0 lg:mt-0 lg:self-center xl:mt-section xl:self-start">
         <Image
           src={decorPaperclip}
           alt=""
