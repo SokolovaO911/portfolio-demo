@@ -60,7 +60,7 @@ export default function Home() {
         </h2>
         <div
           aria-hidden="true"
-          className="absolute inset-y-0 left-0 w-screen bg-accent md:hidden"
+          className="absolute -bottom-section left-0 top-0 w-screen bg-accent md:hidden"
         />
         <Image
           src={decorHand}
@@ -71,7 +71,7 @@ export default function Home() {
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 left-1/2 hidden w-screen -translate-x-1/2 md:block"
+          className="pointer-events-none absolute -bottom-section left-1/2 top-0 hidden w-screen -translate-x-1/2 md:block"
         >
           <div className="absolute inset-0 bg-accent" />
         </div>
