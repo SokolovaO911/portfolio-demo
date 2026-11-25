@@ -7,11 +7,11 @@ export const metadata = { title: "About — Olha Sokolova" };
 export default function AboutPage() {
   return (
     <section className="grid gap-8 md:grid-cols-8 md:items-start">
-      <div className="flex flex-col gap-6 md:col-span-5 lg:col-span-4">
+      <div className="flex flex-col gap-6 md:col-span-5 lg:pr-section">
         <h1 className="text-heading text-ink">
           Hi, I’m Olha, a junior UI/UX designer.
         </h1>
-        <div className="flex flex-col gap-4 hyphens-auto text-justify text-body text-ink">
+        <div className="flex flex-col gap-4 text-pretty text-body text-ink">
           <p>
             I work in Figma, Photoshop and Illustrator. I have one year of
             experience from my studies in UI/UX and graphic design.
