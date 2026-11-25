@@ -74,7 +74,7 @@ export function ContactForm() {
       />
       <p className="text-small text-ink-muted">* Required fields</p>
       </div>
-      <div className="flex flex-col items-start gap-4">
+      <div className="flex flex-col items-center gap-4 md:items-start">
         <Button type="submit" size="lg">
           Send message
         </Button>
