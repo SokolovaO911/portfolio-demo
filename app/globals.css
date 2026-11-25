@@ -63,6 +63,7 @@
   --aspect-case-logo: 2 / 1; /* плашка логотипа в шапці кейсу */
 
   /* Розкладка */
+  --breakpoint-tablet: 56rem; /* планшет у ландшафті: 896 px, між md (768) і lg (1024) */
   --container-content: 70rem; /* ширина контенту: 1120 px */
   --container-prose: 41.5rem; /* ширина колонки тексту: 664 px */
   --spacing-section: 3.5rem; /* відстань між великими секціями: 56 px */

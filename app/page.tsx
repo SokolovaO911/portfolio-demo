@@ -9,13 +9,13 @@ import { projects } from "./projects/data";
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col gap-8 md:grid md:grid-cols-8 md:gap-x-0 md:pb-section lg:flex lg:flex-row lg:items-start lg:gap-0">
-        <div className="flex md:col-span-3 lg:w-19/60 lg:shrink-0">
-          <div aria-hidden="true" className="w-8 shrink-0 lg:w-3/19">
+      <section className="flex flex-col gap-8 md:grid md:grid-cols-8 md:gap-x-0 md:pb-section tablet:flex tablet:flex-row tablet:items-start tablet:gap-0">
+        <div className="flex md:col-span-3 tablet:w-19/60 tablet:shrink-0">
+          <div aria-hidden="true" className="w-8 shrink-0 tablet:w-3/19">
             <Image
               src={decorSquiggle}
               alt=""
-              className="pointer-events-none h-full w-full object-fill lg:object-contain lg:object-left"
+              className="pointer-events-none h-full w-full object-fill tablet:object-contain tablet:object-left"
             />
           </div>
           <Image
@@ -26,9 +26,9 @@ export default function Home() {
             className="aspect-portrait w-full min-w-0 flex-1 object-cover md:w-auto"
           />
         </div>
-        <div aria-hidden="true" className="hidden lg:block lg:w-1/15 lg:shrink-0" />
-        <div className="flex flex-col gap-8 md:contents lg:flex lg:flex-1">
-          <div className="flex flex-col gap-8 md:col-span-5 md:self-start md:pl-8 lg:contents">
+        <div aria-hidden="true" className="hidden tablet:block tablet:w-1/15 tablet:shrink-0" />
+        <div className="flex flex-col gap-8 md:contents tablet:flex tablet:flex-1">
+          <div className="flex flex-col gap-8 md:col-span-5 md:self-start md:pl-8 tablet:contents">
             <p className="text-lead text-ink">
               Olha Sokolova
               <br />
@@ -42,7 +42,7 @@ export default function Home() {
           <p className="text-lead text-ink md:col-span-8">
             Helping people achieve their goals without unnecessary steps
           </p>
-          <div className="grid gap-8 md:col-span-8 md:grid-cols-2 lg:inline-grid lg:auto-cols-fr lg:grid-flow-col lg:grid-cols-none lg:gap-section lg:self-start">
+          <div className="grid gap-8 md:col-span-8 md:grid-cols-2 tablet:inline-grid tablet:auto-cols-fr tablet:grid-flow-col tablet:grid-cols-none tablet:gap-8 lg:gap-section tablet:self-start">
             <Button href="/projects" size="lg" className="w-full">
               View projects
             </Button>
