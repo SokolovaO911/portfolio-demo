@@ -62,7 +62,7 @@ export const projects: Project[] = [
       "Bringing people together through exciting adventures and unforgettable shared experiences.",
     cover: coverRedesign,
     coverAlt: "SpassImTeam logo",
-    cardMeta: "Website · 2 weeks",
+    cardMeta: "Redesign · 2 weeks",
     caseImage: caseRedesign,
     caseImageAlt:
       "Website redesign case study: research, prototype, moodboard, web design and UI kit",
