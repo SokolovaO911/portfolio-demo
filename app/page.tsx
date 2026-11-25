@@ -9,8 +9,8 @@ import { projects } from "./projects/data";
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col gap-8 md:pb-section lg:flex-row lg:items-start lg:gap-0">
-        <div className="flex md:w-1/2 lg:w-19/60 lg:shrink-0">
+      <section className="flex flex-col gap-8 md:grid md:grid-cols-8 md:gap-x-0 md:pb-section lg:flex lg:flex-row lg:items-start lg:gap-0">
+        <div className="flex md:col-span-3 lg:w-19/60 lg:shrink-0">
           <div aria-hidden="true" className="w-8 shrink-0 lg:w-3/19">
             <Image
               src={decorSquiggle}
@@ -23,24 +23,26 @@ export default function Home() {
             alt="Portrait of Olha Sokolova"
             priority
             sizes="(min-width: 768px) 27vw, 100vw"
-            className="aspect-portrait w-full min-w-0 flex-1 object-cover lg:w-auto"
+            className="aspect-portrait w-full min-w-0 flex-1 object-cover md:w-auto"
           />
         </div>
         <div aria-hidden="true" className="hidden lg:block lg:w-1/15 lg:shrink-0" />
-        <div className="flex flex-col gap-8 lg:flex-1">
-          <p className="text-lead text-ink">
-            Olha Sokolova
-            <br />
-            Junior UI/UX Designer
-          </p>
-          <h1 className="text-heading text-ink">
-            I design apps and platforms with{" "}
-            <em className="not-italic text-accent">social impact</em>
-          </h1>
-          <p className="text-lead text-ink">
+        <div className="flex flex-col gap-8 md:contents lg:flex lg:flex-1">
+          <div className="flex flex-col gap-8 md:col-span-5 md:self-start md:pl-8 lg:contents">
+            <p className="text-lead text-ink">
+              Olha Sokolova
+              <br />
+              Junior UI/UX Designer
+            </p>
+            <h1 className="text-heading text-ink">
+              I design apps and platforms with{" "}
+              <em className="not-italic text-accent">social impact</em>
+            </h1>
+          </div>
+          <p className="text-lead text-ink md:col-span-8">
             Helping people achieve their goals without unnecessary steps
           </p>
-          <div className="grid gap-8 md:grid-cols-2 lg:inline-grid lg:auto-cols-fr lg:grid-flow-col lg:grid-cols-none lg:gap-section lg:self-start">
+          <div className="grid gap-8 md:col-span-8 md:grid-cols-2 lg:inline-grid lg:auto-cols-fr lg:grid-flow-col lg:grid-cols-none lg:gap-section lg:self-start">
             <Button href="/projects" size="lg" className="w-full">
               View projects
             </Button>
