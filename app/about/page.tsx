@@ -8,8 +8,12 @@ export default function AboutPage() {
   return (
     <section className="grid gap-8 md:grid-cols-8 md:items-start md:gap-y-4">
       <div className="flex flex-col gap-6 md:contents xl:col-span-5 xl:flex xl:pr-section">
-        <h1 className="text-heading text-ink md:col-span-5 md:mb-2 tablet:col-span-8 xl:col-auto">
-          Hi, I’m Olha, a junior UI/UX designer.
+        <h1 className="text-heading text-ink md:col-span-5 md:mt-6 md:self-center tablet:col-span-8 tablet:mb-2 tablet:mt-0 tablet:self-auto xl:col-auto">
+          Hi, I’m Olha,{" "}
+          <br className="hidden md:inline tablet:hidden" />
+          a junior UI/UX{" "}
+          <br className="hidden md:inline tablet:hidden" />
+          designer.
         </h1>
         <div className="flex flex-col gap-4 text-pretty text-body text-ink md:contents lg:col-span-5 lg:row-start-2 lg:flex xl:col-auto xl:row-auto">
           <p className="md:col-span-8 tablet:col-span-5 xl:col-auto">
