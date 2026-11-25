@@ -57,6 +57,7 @@ export function Navigation({
         <Button
           variant="secondary"
           size="md"
+          className="w-full"
           aria-expanded={open}
           aria-controls={listId}
           onClick={() => setOpen((value) => !value)}

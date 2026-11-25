@@ -24,7 +24,7 @@ export function SiteHeader() {
       >
         <span className="text-accent">S</span>D
       </Link>
-      <Navigation items={items} activeHref={activeHref} className="md:flex-1 md:pr-6 lg:col-span-2 lg:pr-section" />
+      <Navigation items={items} activeHref={activeHref} className="flex-1 md:pr-6 lg:col-span-2 lg:pr-section" />
       <div className="w-full shrink-0 md:w-auto">
         <Button href="/get-in-touch" size="lg" className="w-full">
           Get in touch
