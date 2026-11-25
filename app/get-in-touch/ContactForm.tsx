@@ -74,8 +74,8 @@ export function ContactForm() {
       />
       <p className="text-small text-ink-muted">* Required fields</p>
       </div>
-      <div className="flex flex-col items-center gap-4 md:items-start">
-        <Button type="submit" size="lg">
+      <div className="flex flex-col items-stretch gap-4 md:items-start">
+        <Button type="submit" size="lg" className="w-full md:w-auto">
           Send message
         </Button>
         <p role="status" aria-live="polite" className="text-small text-accent">
