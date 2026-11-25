@@ -40,7 +40,7 @@ export default async function ProjectPage({ params }: { params: Promise<Params> 
   return (
     <>
       <div className="flex flex-col gap-6">
-        <Link href="/projects" className={`${ctaLinkStyle} text-center lg:self-start lg:text-left lg:text-body`}>
+        <Link href="/projects" className={`${ctaLinkStyle} text-center md:self-start md:text-left lg:text-body`}>
           ← All projects
         </Link>
         <h1 className="text-heading text-ink">{project.title}</h1>
