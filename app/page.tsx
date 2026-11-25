@@ -9,7 +9,7 @@ import { projects } from "./projects/data";
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col gap-8 md:flex-row md:items-start md:gap-0 md:mb-8 md:pb-section">
+      <section className="flex flex-col gap-8 md:flex-row md:items-start md:gap-0 md:pb-section">
         <div className="flex md:w-4/15 md:shrink-0 lg:w-19/60">
           <div aria-hidden="true" className="hidden lg:block lg:w-3/19 lg:shrink-0">
             <Image
