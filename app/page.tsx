@@ -53,14 +53,14 @@ export default function Home() {
 
       <section
         aria-labelledby="home-projects"
-        className="relative flex flex-col gap-6 p-4 md:p-6"
+        className="relative flex flex-col gap-6 py-4 md:p-6"
       >
         <h2 id="home-projects" className="sr-only">
           Projects
         </h2>
         <div
           aria-hidden="true"
-          className="absolute -bottom-section left-0 top-0 w-screen bg-accent md:hidden"
+          className="absolute -bottom-section left-1/2 top-0 w-screen -translate-x-1/2 bg-accent md:hidden"
         />
         <Image
           src={decorHand}

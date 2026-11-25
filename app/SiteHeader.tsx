@@ -16,7 +16,7 @@ export function SiteHeader() {
   const activeHref = items.find((item) => pathname.startsWith(item.href))?.href;
 
   return (
-    <header className="mx-auto flex w-full max-w-content items-center justify-between gap-6 px-4 pt-6 md:px-6 md:pt-8 lg:grid lg:grid-cols-4 lg:gap-0">
+    <header className="mx-auto flex w-full max-w-content items-center justify-between gap-6 px-8 pt-6 md:px-6 md:pt-8 lg:grid lg:grid-cols-4 lg:gap-0">
       <Link
         href="/"
         aria-label="Olha Sokolova, home"

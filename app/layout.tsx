@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="overflow-x-clip">
         <SiteHeader />
-        <main className="mx-auto flex w-full max-w-content flex-col gap-section px-4 pb-section pt-8 md:px-6">
+        <main className="mx-auto flex w-full max-w-content flex-col gap-section px-8 pb-section pt-8 md:px-6">
           {children}
         </main>
       </body>
