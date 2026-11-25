@@ -61,11 +61,11 @@ export default async function ProjectPage({ params }: { params: Promise<Params> 
         className="h-auto w-full"
       />
 
-      <div className="flex flex-wrap items-center justify-center gap-6">
-        <Button href="/" variant="secondary" size="lg">
+      <div className="flex flex-col gap-6 md:flex-row md:flex-wrap md:items-center md:justify-center">
+        <Button href="/" variant="secondary" size="lg" className="w-full md:w-auto">
           Back to home
         </Button>
-        <Link href={`/projects/${next.slug}`} className={ctaLinkStyle}>
+        <Link href={`/projects/${next.slug}`} className={`text-center ${ctaLinkStyle}`}>
           Next project<span className="sr-only">: {next.title}</span> →
         </Link>
       </div>

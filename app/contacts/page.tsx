@@ -71,6 +71,7 @@ export default function ContactsPage() {
           <Button
             href="/Olha_Okulevych_Resume.pdf"
             size="lg"
+            className="w-full md:w-auto"
             download
           >
             Download resume (PDF)
