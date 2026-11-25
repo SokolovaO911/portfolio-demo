@@ -88,7 +88,7 @@ export function FormField({
             stroke="currentColor"
             strokeWidth="1.5"
             strokeLinecap="round"
-            className="mt-1 size-4 shrink-0"
+            className="mt-2 size-4 shrink-0"
           >
             <circle cx="8" cy="8" r="6.5" />
             <path d="M8 4.5v4" />
