@@ -16,22 +16,26 @@ export function SiteHeader() {
   const activeHref = items.find((item) => pathname.startsWith(item.href))?.href;
 
   return (
-    <header className="mx-auto flex w-full max-w-content items-center justify-between gap-6 px-4 pt-6 md:px-6">
+    <header className="flex w-full items-center justify-between gap-6 px-4 pt-6 md:justify-start md:gap-0 md:px-0">
+      <div aria-hidden="true" className="hidden md:block md:w-1/15" />
       <Link
         href="/"
         aria-label="Olha Sokolova, home"
-        className="text-lead text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent md:text-display"
+        className="text-lead text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent md:text-display lg:w-2/9"
       >
         <span className="text-accent">S</span>D
       </Link>
-      <div className="flex items-center gap-8">
-        <Navigation items={items} activeHref={activeHref} />
-        <div className="hidden md:block">
-          <Button href="/get-in-touch" size="lg">
-            Get in touch
-          </Button>
-        </div>
+      <Navigation
+        items={items}
+        activeHref={activeHref}
+        className="md:min-w-fit lg:w-3/8"
+      />
+      <div className="hidden md:flex md:flex-1 md:justify-end">
+        <Button href="/get-in-touch" size="lg">
+          Get in touch
+        </Button>
       </div>
+      <div aria-hidden="true" className="hidden lg:block lg:w-1/8" />
     </header>
   );
 }

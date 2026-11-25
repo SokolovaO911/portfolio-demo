@@ -68,7 +68,7 @@ export function Navigation({
         id={listId}
         className={[
           "absolute left-0 top-full z-10 mt-2 min-w-full flex-col gap-2 border border-line bg-surface p-4",
-          "md:static md:mt-0 md:flex md:flex-row md:gap-8 md:border-0 md:bg-transparent md:p-0",
+          "md:static md:mt-0 md:flex md:flex-row md:justify-between md:gap-8 md:border-0 md:bg-transparent md:p-0",
           open ? "flex" : "hidden",
         ].join(" ")}
       >
