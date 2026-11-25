@@ -75,3 +75,10 @@ body {
   font-size: var(--text-body);
   line-height: var(--text-body--line-height);
 }
+
+/* Заголовки (heading, display) завжди великими літерами.
+   Токен розміру в Tailwind не вміє зберігати регістр, тому правило лежить тут. */
+.text-heading,
+.text-display {
+  text-transform: uppercase;
+}
