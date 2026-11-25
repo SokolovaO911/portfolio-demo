@@ -21,9 +21,11 @@ Storybook показує токени й компоненти дизайн-си�
 - Кольори: `canvas` (фон сторінки), `surface` (картки й поля), `line` (декоративні лінії й рамки карток), `accent`, `ink`, `ink-muted`, `danger` (помилка). Класи: `bg-canvas`, `bg-surface`, `border-line`, `bg-accent`, `text-ink`, `text-ink-muted`, `text-danger`, `border-danger`.
 - Межа поля форми й кнопки без заливки: `ink-muted` (контраст не менше 3:1), не `line`.
 - Радіуси: `rounded-control` (кнопки, поля), `rounded-card` (картки).
-- Розміри тексту: `text-caption`, `text-body`, `text-lead`, `text-heading`, `text-display`. Висота рядка, трекінг і жирність задані парами в `@theme` (`--text-*--line-height`, `--text-*--letter-spacing`, `--text-*--font-weight`).
+- Розміри тексту: `text-caption`, `text-small`, `text-body`, `text-lead`, `text-heading`, `text-display`. Висота рядка, трекінг і жирність задані парами в `@theme` (`--text-*--line-height`, `--text-*--letter-spacing`, `--text-*--font-weight`).
 - Пропорції картинок: `aspect-cover` (обкладинка картки) та інші `--aspect-*` з `@theme`.
 - Відступи: тільки 8, 12, 16, 24, 32 px, тобто числа 2, 3, 4, 6, 8 у класах (`p-2`, `gap-4`).
+- Токени розкладки сторінки: `max-w-content`, `max-w-prose`, `section` (відстань між секціями), точка перелому `tablet`, ширини блоків `w-hero-photo`, `w-hero-gap`, `w-cards`, `w-cards-offset`, `w-about-photo`, `w-menu`. Тільки на сторінках, не в компонентах.
+- Фокус і підкреслення: `outline-focus` (колір окремо, `outline-accent`), `underline-offset-link`, `underline-current`. Стандартні `outline-2`, `outline-offset-2`, `underline-offset-4`, `decoration-2` не використовуй.
 
 Усе, що є в історіях, документації й компонентах, будується тільки з цього. Заборонено: hex і rgb, стандартні класи Tailwind поза системою (`bg-blue-600`, `text-sm`), значення в квадратних дужках (`p-[13px]`, `h-[150px]`), відступи поза набором. Після скидання стандартної палітри класи `text-white`, `bg-black`, `bg-white` і подібні мовчки перестають працювати: Tailwind не повідомляє про невідомий клас. Тому після кожної зміни перевіряй, що в коді немає класів, яких немає в `@theme`. Якщо історії чи документації потрібен елемент, якого немає в системі, не вигадуй його: перелічи, чого бракує, і запитай студента.
 
