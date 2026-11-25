@@ -8,7 +8,7 @@ export default function ProjectsPage() {
     <>
       <header className="flex flex-col gap-4">
         <h1 className="text-heading text-ink">My projects</h1>
-        <p className="max-w-prose text-body text-ink">
+        <p className="max-w-prose text-balance text-body text-ink">
           Three projects in which I went from research to a finished design: a
           mobile app, a responsive website and a website redesign. Open any of
           them to see the idea, the audience and how I worked on it.

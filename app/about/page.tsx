@@ -11,7 +11,7 @@ export default function AboutPage() {
         <h1 className="text-heading text-ink">
           Hi, I’m Olha, a junior UI/UX designer.
         </h1>
-        <div className="flex max-w-prose flex-col gap-4 text-body text-ink">
+        <div className="flex max-w-prose flex-col gap-4 text-pretty text-body text-ink">
           <p>
             I work in Figma, Photoshop and Illustrator. I have one year of
             experience from my studies in UI/UX and graphic design.
