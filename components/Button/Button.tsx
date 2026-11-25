@@ -35,7 +35,7 @@ type ButtonAsLink = CommonProps &
 export type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 const base =
-  "inline-flex items-center justify-center border rounded-control font-sans font-medium text-center " +
+  "inline-flex items-center justify-center border rounded-control font-sans text-center " +
   "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
 const variants: Record<ButtonVariant, string> = {

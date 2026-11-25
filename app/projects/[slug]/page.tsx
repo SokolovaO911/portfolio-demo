@@ -20,7 +20,7 @@ const linkStyle =
   "text-body text-accent underline underline-offset-4 hover:text-ink " +
   "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
-const ctaLinkStyle = linkStyle.replace("text-body", "text-lead font-medium");
+const ctaLinkStyle = linkStyle.replace("text-body", "text-lead");
 
 export default async function ProjectPage({ params }: { params: Promise<Params> }) {
   const { slug } = await params;
