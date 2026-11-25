@@ -7,7 +7,7 @@ export const metadata = { title: "About — Olha Sokolova" };
 export default function AboutPage() {
   return (
     <section className="grid gap-8 md:block tablet:grid tablet:grid-cols-8 tablet:items-start tablet:gap-y-4">
-      <div className="relative order-last mt-8 md:float-right md:order-none md:col-span-3 md:col-start-6 md:mb-4 md:ml-6 md:mt-0 md:w-1/3 tablet:float-none tablet:row-span-2 tablet:row-start-3 tablet:mb-8 tablet:ml-0 tablet:w-auto tablet:self-center lg:row-span-1 lg:row-start-2 lg:mb-0 xl:row-start-1 xl:mt-section xl:self-start">
+      <div className="relative order-last mt-8 md:float-right md:order-none md:col-span-3 md:col-start-6 md:mb-4 md:ml-6 md:mt-0 md:w-about-photo tablet:float-none tablet:row-span-2 tablet:row-start-3 tablet:mb-8 tablet:ml-0 tablet:w-auto tablet:self-center lg:row-span-1 lg:row-start-2 lg:mb-0 xl:row-start-1 xl:mt-section xl:self-start">
         <Image
           src={decorPaperclip}
           alt=""

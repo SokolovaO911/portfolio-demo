@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <section className="flex flex-col gap-8 md:grid md:grid-cols-8 md:gap-x-0 md:pb-section tablet:flex tablet:flex-row tablet:items-start tablet:gap-0">
-        <div className="flex md:col-span-3 tablet:w-19/60 tablet:shrink-0 tablet:self-center lg:self-start">
+        <div className="flex md:col-span-3 tablet:w-hero-photo tablet:shrink-0 tablet:self-center lg:self-start">
           <div aria-hidden="true" className="w-8 shrink-0 tablet:w-3/19">
             <Image
               src={decorSquiggle}
@@ -26,7 +26,7 @@ export default function Home() {
             className="aspect-portrait w-full min-w-0 flex-1 object-cover md:w-auto"
           />
         </div>
-        <div aria-hidden="true" className="hidden tablet:block tablet:w-1/15 tablet:shrink-0" />
+        <div aria-hidden="true" className="hidden tablet:block tablet:w-hero-gap tablet:shrink-0" />
         <div className="flex flex-col gap-8 md:contents tablet:flex tablet:flex-1">
           <div className="flex flex-col gap-8 md:col-span-5 md:self-start md:pl-8 tablet:contents">
             <p className="text-lead text-ink">
@@ -89,8 +89,8 @@ export default function Home() {
           />
         </div>
         <div className="relative -mt-4 md:left-1/2 md:mt-0 md:flex md:w-screen md:-translate-x-1/2">
-        <div aria-hidden="true" className="hidden w-1/5 shrink-0 md:block" />
-        <ul className="grid gap-6 md:w-3/4 md:grid-cols-3">
+        <div aria-hidden="true" className="hidden w-cards-offset shrink-0 md:block" />
+        <ul className="grid gap-6 md:w-cards md:grid-cols-3">
           {projects.map((project) => (
             <li key={project.slug} className="flex">
               <WorkCard

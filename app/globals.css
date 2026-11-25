@@ -66,6 +66,12 @@
   --breakpoint-tablet: 56rem; /* планшет у ландшафті: 896 px, між md (768) і lg (1024) */
   --container-content: 70rem; /* ширина контенту: 1120 px */
   --container-prose: 41.5rem; /* ширина колонки тексту: 664 px */
+  --container-hero-photo: calc(19 / 60 * 100%); /* колонка фото героя: 19/60 ширини */
+  --container-hero-gap: calc(1 / 15 * 100%); /* розпірка між фото й текстом героя */
+  --container-cards: 75%; /* ряд карток проєктів на головній */
+  --container-cards-offset: 20%; /* відступ зліва від ряду карток */
+  --container-about-photo: calc(100% / 3); /* фото на сторінці About на планшеті */
+  --container-menu: 50%; /* кнопка Menu у шапці на телефоні */
   --spacing-section: 3.5rem; /* відстань між великими секціями: 56 px */
 }
 
