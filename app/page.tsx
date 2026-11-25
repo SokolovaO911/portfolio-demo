@@ -86,7 +86,7 @@ export default function Home() {
             className="absolute left-0 top-0 w-5/16 -translate-y-1/2 rotate-6"
           />
         </div>
-        <div className="relative md:left-1/2 md:flex md:w-screen md:-translate-x-1/2">
+        <div className="relative -mt-4 md:left-1/2 md:mt-0 md:flex md:w-screen md:-translate-x-1/2">
         <div aria-hidden="true" className="hidden w-1/5 shrink-0 md:block" />
         <ul className="grid gap-6 md:w-3/4 md:grid-cols-3">
           {projects.map((project) => (
