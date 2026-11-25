@@ -6,12 +6,12 @@ export const metadata = { title: "About — Olha Sokolova" };
 
 export default function AboutPage() {
   return (
-    <section className="grid gap-8 md:grid-cols-3 md:items-start">
-      <div className="flex flex-col gap-6 md:col-span-2">
+    <section className="grid gap-8 md:grid-cols-8 md:items-start">
+      <div className="flex flex-col gap-6 md:col-span-4">
         <h1 className="text-heading text-ink">
           Hi, I’m Olha, a junior UI/UX designer.
         </h1>
-        <div className="flex max-w-prose flex-col gap-4 hyphens-auto text-justify text-body text-ink">
+        <div className="flex flex-col gap-4 hyphens-auto text-justify text-body text-ink">
           <p>
             I work in Figma, Photoshop and Illustrator. I have one year of
             experience from my studies in UI/UX and graphic design.
@@ -41,12 +41,12 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-      <div className="relative mt-8 md:col-span-1 md:mt-section">
+      <div className="relative mt-8 md:col-span-3 md:col-start-6 md:mt-section">
         <Image
           src={decorPaperclip}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute -top-8 left-3/4 z-10 w-1/5"
+          className="pointer-events-none absolute -top-6 left-3/4 z-10 w-1/5"
         />
         <Image
           src={aboutPhoto}
