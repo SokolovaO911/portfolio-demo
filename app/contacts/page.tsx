@@ -84,7 +84,7 @@ export default function ContactsPage() {
       alt=""
       aria-hidden="true"
       sizes="100vw"
-      className="pointer-events-none -mr-16 ml-auto w-full md:hidden"
+      className="pointer-events-none -mr-8 ml-auto w-full translate-x-1/8 md:hidden"
     />
     <div
       aria-hidden="true"
