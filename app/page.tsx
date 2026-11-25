@@ -83,7 +83,7 @@ export default function Home() {
             src={decorHand}
             alt=""
             sizes="33vw"
-            className="absolute left-0 top-0 w-5/16 -translate-y-1/2"
+            className="absolute left-0 top-0 w-5/16 -translate-y-1/2 rotate-12"
           />
         </div>
         <div className="relative md:left-1/2 md:flex md:w-screen md:-translate-x-1/2">
