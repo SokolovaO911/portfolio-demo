@@ -41,7 +41,7 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-      <div className="relative mt-8 md:col-span-1 md:mt-0">
+      <div className="relative mt-8 md:col-span-1 md:mt-section">
         <Image
           src={decorPaperclip}
           alt=""
