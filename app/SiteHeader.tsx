@@ -16,7 +16,7 @@ export function SiteHeader() {
   const activeHref = items.find((item) => pathname.startsWith(item.href))?.href;
 
   return (
-    <header className="flex w-full items-center justify-between gap-6 px-4 pt-6 md:justify-start md:gap-0 md:px-0">
+    <header className="flex w-full items-center justify-between gap-6 px-4 pt-6 md:justify-start md:gap-0 md:px-0 md:pt-8">
       <div aria-hidden="true" className="hidden md:block md:w-1/15" />
       <Link
         href="/"
@@ -30,8 +30,9 @@ export function SiteHeader() {
         activeHref={activeHref}
         className="md:min-w-fit lg:w-3/8"
       />
+      <div aria-hidden="true" className="hidden lg:block lg:w-1/40" />
       <div className="hidden md:flex md:flex-1 md:justify-end">
-        <Button href="/get-in-touch" size="lg">
+        <Button href="/get-in-touch" size="lg" className="lg:w-full">
           Get in touch
         </Button>
       </div>
