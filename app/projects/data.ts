@@ -53,10 +53,10 @@ export const projects: Project[] = [
     tools: "Figma",
   },
   {
-    slug: "website-redesign",
-    title: "Website Redesign",
+    slug: "spassim-team",
+    title: "SPASSIM TEAM",
     summary:
-      "A fresh, lively redesign of a website for adventure games and team events.",
+      "Bringing people together through exciting adventures and unforgettable shared experiences.",
     cover: coverRedesign,
     coverAlt: "Spassim Team logo",
     caseImage: caseRedesign,
