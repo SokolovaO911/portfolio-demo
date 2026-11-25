@@ -14,7 +14,7 @@ export default function ContactsPage() {
     <section className="flex max-w-prose flex-col gap-section">
       <div className="flex flex-col gap-4">
         <h1 className="text-heading text-accent">Let’s connect</h1>
-        <p className="hyphens-auto text-justify text-body text-ink">
+        <p className="text-pretty text-body text-ink">
           I’m looking for a full-time job in UI/UX design in Freiburg and the
           surrounding area: remote, on-site or hybrid. I’d be glad to tell you
           about my projects and learn more about your team.
