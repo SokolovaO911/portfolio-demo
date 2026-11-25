@@ -20,7 +20,7 @@ export function SiteHeader() {
       <Link
         href="/"
         aria-label="Olha Sokolova, home"
-        className="text-display text-ink focus-visible:outline-focus focus-visible:outline-accent"
+        className="text-display text-ink hover:underline underline-offset-link focus-visible:outline-focus focus-visible:outline-accent"
       >
         <span className="text-accent">S</span>D
       </Link>
