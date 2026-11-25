@@ -8,7 +8,7 @@ export const metadata = { title: "Get in touch — Olha Sokolova" };
 export default function GetInTouchPage() {
   return (
     <section className="grid gap-8 md:grid-cols-3 md:gap-x-8">
-      <h1 className="text-heading uppercase text-ink md:col-span-2 md:col-start-2 md:row-start-1">
+      <h1 className="text-heading text-ink md:col-span-2 md:col-start-2 md:row-start-1">
         Have a question or a project in mind?
       </h1>
       <div className="relative md:col-span-1 md:col-start-1 md:row-span-2 md:row-start-1">
