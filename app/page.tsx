@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <section className="flex flex-col gap-8 md:grid md:grid-cols-8 md:gap-x-0 md:pb-section tablet:flex tablet:flex-row tablet:items-start tablet:gap-0">
-        <div className="flex md:col-span-3 tablet:w-19/60 tablet:shrink-0">
+        <div className="flex md:col-span-3 tablet:w-19/60 tablet:shrink-0 tablet:self-center lg:self-start">
           <div aria-hidden="true" className="w-8 shrink-0 tablet:w-3/19">
             <Image
               src={decorSquiggle}
