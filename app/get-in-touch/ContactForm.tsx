@@ -61,6 +61,7 @@ export function ContactForm() {
         error={Boolean(errors.email)}
         errorMessage={errors.email}
       />
+      <div className="flex flex-col gap-2">
       <FormField
         label="Your message"
         name="message"
@@ -72,6 +73,7 @@ export function ContactForm() {
         errorMessage={errors.message}
       />
       <p className="text-small text-ink-muted">* Required fields</p>
+      </div>
       <div className="flex flex-col items-start gap-4">
         <Button type="submit" size="lg">
           Send message
