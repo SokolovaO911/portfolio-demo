@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <section className="flex flex-col gap-8 md:flex-row md:items-start md:gap-0 md:pb-section">
-        <div className="flex md:w-4/15 md:shrink-0 lg:w-19/60">
-          <div aria-hidden="true" className="w-8 shrink-0 md:hidden lg:block lg:w-3/19">
+        <div className="flex md:w-19/60 md:shrink-0">
+          <div aria-hidden="true" className="w-8 shrink-0 md:w-3/19">
             <Image
               src={decorSquiggle}
               alt=""
@@ -23,7 +23,7 @@ export default function Home() {
             alt="Portrait of Olha Sokolova"
             priority
             sizes="(min-width: 768px) 27vw, 100vw"
-            className="aspect-portrait w-full min-w-0 flex-1 object-cover lg:w-auto"
+            className="aspect-portrait w-full min-w-0 flex-1 object-cover md:w-auto"
           />
         </div>
         <div aria-hidden="true" className="hidden md:block md:w-1/15 md:shrink-0" />
@@ -40,7 +40,7 @@ export default function Home() {
           <p className="text-lead text-ink">
             Helping people achieve their goals without unnecessary steps
           </p>
-          <div className="grid gap-8 md:inline-grid md:auto-cols-fr md:grid-flow-col md:gap-section md:self-start">
+          <div className="grid gap-8 md:inline-grid md:auto-cols-fr md:self-start lg:grid-flow-col lg:gap-section">
             <Button href="/projects" size="lg" className="w-full">
               View projects
             </Button>
