@@ -39,11 +39,11 @@ export default function Home() {
           <p className="text-lead text-ink">
             Helping people achieve their goals without unnecessary steps
           </p>
-          <div className="flex flex-wrap gap-8 md:gap-section">
-            <Button href="/projects" size="lg">
+          <div className="grid gap-8 md:inline-grid md:auto-cols-fr md:grid-flow-col md:gap-section md:self-start">
+            <Button href="/projects" size="lg" className="w-full">
               View projects
             </Button>
-            <Button href="/about" size="lg" variant="secondary">
+            <Button href="/about" size="lg" variant="secondary" className="w-full">
               About me
             </Button>
           </div>
