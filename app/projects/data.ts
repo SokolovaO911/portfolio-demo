@@ -54,11 +54,11 @@ export const projects: Project[] = [
   },
   {
     slug: "spassim-team",
-    title: "SpassimTeam",
+    title: "SpassImTeam",
     summary:
       "Bringing people together through exciting adventures and unforgettable shared experiences.",
     cover: coverRedesign,
-    coverAlt: "SpassimTeam logo",
+    coverAlt: "SpassImTeam logo",
     caseImage: caseRedesign,
     caseImageAlt:
       "Website redesign case study: research, prototype, moodboard, web design and UI kit",
