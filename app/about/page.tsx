@@ -7,16 +7,16 @@ export const metadata = { title: "About — Olha Sokolova" };
 export default function AboutPage() {
   return (
     <section className="grid gap-8 md:grid-cols-8 md:items-start md:gap-y-4">
-      <div className="flex flex-col gap-6 md:contents lg:col-span-5 lg:flex lg:pr-section">
-        <h1 className="text-heading text-ink md:col-span-8 md:mb-2 lg:col-auto">
+      <div className="flex flex-col gap-6 md:contents xl:col-span-5 xl:flex xl:pr-section">
+        <h1 className="text-heading text-ink md:col-span-8 md:mb-2 xl:col-auto">
           Hi, I’m Olha, a junior UI/UX designer.
         </h1>
-        <div className="flex flex-col gap-4 text-pretty text-body text-ink md:contents lg:flex lg:col-auto">
-          <p className="md:col-span-8 lg:col-auto">
+        <div className="flex flex-col gap-4 text-pretty text-body text-ink md:contents lg:col-span-5 lg:row-start-2 lg:flex xl:col-auto xl:row-auto">
+          <p className="md:col-span-8 xl:col-auto">
             I work in Figma, Photoshop and Illustrator. I have one year of
             experience from my studies in UI/UX and graphic design.
           </p>
-          <p className="md:col-span-8 lg:col-auto">
+          <p className="md:col-span-8 xl:col-auto">
             What inspires me most are projects that help people and animals. I
             know this field not only from the outside: I have volunteered
             myself.
@@ -37,13 +37,13 @@ export default function AboutPage() {
             adventure games, shows that the same approach works in any field.
           </p>
           </div>
-          <p className="md:col-span-8 lg:col-auto">
+          <p className="md:col-span-8 xl:col-auto">
             I’m now looking for a full-time job in UI/UX design in Freiburg and
             the surrounding area: remote, on-site or hybrid.
           </p>
         </div>
       </div>
-      <div className="relative mt-8 md:col-span-3 md:col-start-6 md:row-start-4 md:mb-6 md:mt-4 lg:row-start-1 lg:mb-0 lg:mt-0 lg:self-center xl:mt-section xl:self-start">
+      <div className="relative mt-8 md:col-span-3 md:col-start-6 md:row-start-4 md:mb-6 md:mt-4 lg:row-start-2 lg:mb-0 lg:mt-0 lg:self-center xl:row-start-1 xl:mt-section xl:self-start">
         <Image
           src={decorPaperclip}
           alt=""
