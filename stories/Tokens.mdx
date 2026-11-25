@@ -94,3 +94,22 @@ import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs/blocks";
   <div className="mt-4 w-about-photo bg-surface p-2 text-small">w-about-photo: фото на сторінці About</div>
   <div className="mt-4 w-menu bg-surface p-2 text-small">w-menu: кнопка Menu у шапці на телефоні</div>
 </div>
+
+## Фокус і підкреслення
+
+Три класи замість стандартних значень Tailwind. Значення живуть тільки в `@theme`.
+
+<div className="flex flex-col gap-6 bg-canvas p-6 text-ink">
+  <div>
+    <button type="button" className="border border-ink-muted px-4 py-2 text-small outline-focus outline-accent">outline-focus</button>
+    <div className="mt-2 text-caption">outline-focus: контур фокуса (колір додається окремо, outline-accent)</div>
+  </div>
+  <div>
+    <span className="text-body text-accent underline underline-offset-link">Посилання</span>
+    <div className="mt-2 text-caption">underline-offset-link: підкреслення посилання</div>
+  </div>
+  <div>
+    <span className="text-lead text-accent underline underline-current">Активний пункт</span>
+    <div className="mt-2 text-caption">underline-current: підкреслення активного пункту меню</div>
+  </div>
+</div>

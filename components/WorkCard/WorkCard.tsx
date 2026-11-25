@@ -28,7 +28,7 @@ export type WorkCardProps = {
 const card =
   "group flex flex-col gap-4 rounded-card border border-accent bg-accent p-4 text-canvas font-sans " +
   "hover:bg-canvas hover:text-ink " +
-  "focus-visible:outline-2 focus-visible:outline-offset-2";
+  "focus-visible:outline-focus";
 
 const focusBySurface = {
   canvas: "focus-visible:outline-accent",

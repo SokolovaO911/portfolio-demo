@@ -20,7 +20,7 @@ export type NavigationProps = {
 
 const link =
   "block whitespace-nowrap text-lead font-sans " +
-  "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
+  "focus-visible:outline-focus focus-visible:outline-accent";
 
 /**
  * Меню сайту. На широкому екрані пункти в ряд, на вузькому меню згорнуте
@@ -84,7 +84,7 @@ export function Navigation({
                 className={[
                   link,
                   active
-                    ? "text-accent underline underline-offset-8 decoration-2"
+                    ? "text-accent underline underline-current"
                     : "text-ink hover:text-accent",
                 ].join(" ")}
               >

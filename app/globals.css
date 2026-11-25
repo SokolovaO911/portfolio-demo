@@ -73,6 +73,29 @@
   --container-about-photo: calc(100% / 3); /* фото на сторінці About на планшеті */
   --container-menu: 50%; /* кнопка Menu у шапці на телефоні */
   --spacing-section: 3.5rem; /* відстань між великими секціями: 56 px */
+
+  /* Фокус і підкреслення */
+  --focus-width: 2px; /* товщина контуру фокуса */
+  --focus-offset: 2px; /* відступ контуру фокуса від елемента */
+  --underline-offset-link: 4px; /* відступ підкреслення посилання */
+  --underline-offset-current: 8px; /* відступ підкреслення активного пункту меню */
+  --underline-thickness-current: 2px; /* товщина підкреслення активного пункту меню */
+}
+
+/* Контур фокуса: колір задається окремо (outline-accent, outline-canvas) */
+@utility outline-focus {
+  outline-style: solid;
+  outline-width: var(--focus-width);
+  outline-offset: var(--focus-offset);
+}
+
+@utility underline-offset-link {
+  text-underline-offset: var(--underline-offset-link);
+}
+
+@utility underline-current {
+  text-underline-offset: var(--underline-offset-current);
+  text-decoration-thickness: var(--underline-thickness-current);
 }
 
 body {

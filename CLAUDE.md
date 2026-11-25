@@ -27,6 +27,7 @@
 - Ширина контенту: `max-w-content` (1120 px), колонка тексту: `max-w-prose` (664 px).
 - Точка перелому `tablet` (896 px) між `md` (768) і `lg` (1024): планшет у ландшафті.
 - Ширини розкладки (у відсотках від батьківського блока): `w-hero-photo` (19/60), `w-hero-gap` (1/15), `w-cards` (75%), `w-cards-offset` (20%), `w-about-photo` (1/3), `w-menu` (50%).
+- Фокус і підкреслення: `outline-focus` (контур фокуса; колір додається окремо, `outline-accent`), `underline-offset-link` (підкреслення посилання), `underline-current` (підкреслення активного пункту меню). Класи `outline-2`, `outline-offset-2`, `underline-offset-4/8`, `decoration-2` не використовуємо.
 - Шрифт: Helvetica Neue, Helvetica, Arial (системний стек).
 
 ## Компоненти

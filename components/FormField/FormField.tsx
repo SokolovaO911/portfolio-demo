@@ -19,7 +19,7 @@ export type FormFieldProps = Omit<ComponentPropsWithoutRef<"input">, "id"> & {
 const input =
   "w-full rounded-control border px-4 py-3 text-small text-ink font-sans " +
   "placeholder:text-ink-muted " +
-  "focus:outline-2 focus:outline-offset-2 focus:outline-accent " +
+  "focus:outline-focus focus:outline-accent " +
   "disabled:bg-canvas disabled:text-ink-muted disabled:cursor-not-allowed";
 
 /**

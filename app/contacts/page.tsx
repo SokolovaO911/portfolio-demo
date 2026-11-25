@@ -5,8 +5,8 @@ import decorHand from "@/assets/decor-hand-contact.png";
 export const metadata = { title: "Contact — Olha Sokolova" };
 
 const linkStyle =
-  "text-accent underline underline-offset-4 hover:text-ink " +
-  "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
+  "text-accent underline underline-offset-link hover:text-ink " +
+  "focus-visible:outline-focus focus-visible:outline-accent";
 
 export default function ContactsPage() {
   return (

@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
 }
 
 const linkStyle =
-  "text-body text-accent underline underline-offset-4 hover:text-ink " +
-  "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
+  "text-body text-accent underline underline-offset-link hover:text-ink " +
+  "focus-visible:outline-focus focus-visible:outline-accent";
 
 const ctaLinkStyle = linkStyle.replace("text-body", "text-lead");
 
