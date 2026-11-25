@@ -20,7 +20,7 @@
 
 - Кольори: `canvas` (фон), `surface` (поля форми), `line` (декоративні лінії), `accent`, `ink`, `ink-muted`, `danger` (помилка).
 - Межа поля форми: `ink-muted` (контраст не менше 3:1), не `line`.
-- Текст: `text-display`, `text-heading`, `text-lead`, `text-body`, `text-small`, `text-caption`. `text-display` і `text-heading` (заголовки) завжди великими літерами: це робить правило в `globals.css`, окремий `uppercase` не потрібен.
+- Текст: `text-display`, `text-heading`, `text-lead`, `text-body`, `text-small`, `text-caption`.
 - Радіуси: `rounded-control`, `rounded-card`. Обидва 0: кути прямі.
 - Пропорції: `aspect-portrait` (3:4), `aspect-cover` (16:9), `aspect-case-logo` (2:1).
 - Відступи: 8, 12, 16, 24, 32 px (числа 2, 3, 4, 6, 8 у класах). Між великими секціями: `section`.
