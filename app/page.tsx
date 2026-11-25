@@ -73,7 +73,7 @@ export default function Home() {
           aria-hidden="true"
           className="pointer-events-none absolute inset-y-0 left-1/2 hidden w-screen -translate-x-1/2 md:block"
         >
-          <div className="absolute inset-y-0 left-1/16 right-1/20 bg-accent" />
+          <div className="absolute inset-0 bg-accent" />
         </div>
         <div
           aria-hidden="true"
