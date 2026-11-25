@@ -53,7 +53,7 @@ export default function Home() {
 
       <section
         aria-labelledby="home-projects"
-        className="relative flex flex-col gap-6 p-4 md:mt-section md:p-6"
+        className="relative flex flex-col gap-6 p-4 md:p-6"
       >
         <h2 id="home-projects" className="sr-only">
           Projects
