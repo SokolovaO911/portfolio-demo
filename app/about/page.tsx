@@ -12,7 +12,7 @@ export default function AboutPage() {
           Hi, I’m Olha, a junior UI/UX designer.
         </h1>
         <div className="flex flex-col gap-4 text-pretty text-body text-ink md:contents lg:col-span-5 lg:row-start-2 lg:flex xl:col-auto xl:row-auto">
-          <p className="md:col-span-8 xl:col-auto">
+          <p className="md:col-span-5 xl:col-auto">
             I work in Figma, Photoshop and Illustrator. I have one year of
             experience from my studies in UI/UX and graphic design.
           </p>
@@ -37,7 +37,7 @@ export default function AboutPage() {
             adventure games, shows that the same approach works in any field.
           </p>
           </div>
-          <p className="md:col-span-8 xl:col-auto">
+          <p className="md:col-span-5 xl:col-auto">
             I’m now looking for a full-time job in UI/UX design in Freiburg and
             the surrounding area: remote, on-site or hybrid.
           </p>
