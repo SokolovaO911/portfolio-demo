@@ -67,7 +67,7 @@ export default function Home() {
           alt=""
           aria-hidden="true"
           sizes="50vw"
-          className="pointer-events-none relative z-10 ml-auto w-1/2 -scale-x-100 md:hidden"
+          className="pointer-events-none relative z-10 -mr-8 ml-auto w-1/2 -scale-x-100 md:hidden"
         />
         <div
           aria-hidden="true"
