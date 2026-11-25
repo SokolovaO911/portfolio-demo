@@ -39,7 +39,7 @@ export default function Home() {
           <p className="text-lead text-ink">
             Helping people achieve their goals without unnecessary steps
           </p>
-          <div className="flex flex-wrap gap-8">
+          <div className="flex flex-wrap gap-8 md:gap-section">
             <Button href="/projects" size="lg">
               View projects
             </Button>
