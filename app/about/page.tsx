@@ -17,7 +17,7 @@ export default function AboutPage() {
         <Image
           src={aboutPhoto}
           alt="Portrait of Olha Sokolova with the Eiffel Tower behind her"
-          sizes="(min-width: 768px) 33vw, 100vw"
+          sizes="(min-width: 48em) 33vw, 100vw"
           className="aspect-portrait w-full origin-top rotate-2 object-cover"
         />
       </div>

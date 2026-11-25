@@ -21,7 +21,7 @@ export default function GetInTouchPage() {
         <Image
           src={contactPhoto}
           alt="Portrait of Olha Sokolova with a mountain landscape behind her"
-          sizes="(min-width: 768px) 33vw, 100vw"
+          sizes="(min-width: 48em) 33vw, 100vw"
           className="aspect-portrait w-full object-cover md:h-full md:aspect-auto"
         />
       </div>

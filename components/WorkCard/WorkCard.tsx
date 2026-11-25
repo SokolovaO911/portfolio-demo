@@ -56,7 +56,7 @@ export function WorkCard({
       <Image
         src={image}
         alt={imageAlt}
-        sizes="(min-width: 768px) 33vw, 100vw"
+        sizes="(min-width: 48em) 33vw, 100vw"
         className={`aspect-cover w-full object-cover ${imagePosition === "top" ? "object-top" : "object-center"}`}
       />
       <span className="flex flex-col gap-2">

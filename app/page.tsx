@@ -22,7 +22,7 @@ export default function Home() {
             src={heroPhoto}
             alt="Portrait of Olha Sokolova"
             priority
-            sizes="(min-width: 768px) 27vw, 100vw"
+            sizes="(min-width: 48em) 27vw, 100vw"
             className="aspect-portrait w-full min-w-0 flex-1 object-cover md:w-auto"
           />
         </div>

@@ -5,7 +5,7 @@ const meta = {
   title: "Components/Navigation",
   component: Navigation,
   parameters: {
-    docs: { story: { inline: false, height: "320px" } },
+    docs: { story: { inline: false, height: "20rem" } },
   },
   decorators: [
     (Story) => (

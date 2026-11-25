@@ -28,9 +28,9 @@ import * as WorkCardStories from "./WorkCard.stories";
 
 ## Варіанти і стани
 
-- Default: заливка `accent`, межа `accent` 1 px, текст `canvas` (14,3:1).
+- Default: заливка `accent`, межа `accent`, текст `canvas` (14,3:1).
 - Hover: заливка стає `canvas`, текст `ink` (17,8:1), межа `accent` лишається. На жовтій підложці картка в стані default зливається з нею, і її видно лише при наведенні.
-- Focus клавішею Tab: контур завтовшки 2 px із відступом 2 px. На фоні `canvas` він `accent` (14,3:1), на фоні `accent` (`surface="accent"`) він `canvas` (14,3:1): жовтий контур на жовтому не видно.
+- Focus клавішею Tab: контур `outline-focus`. На фоні `canvas` він `accent` (14,3:1), на фоні `accent` (`surface="accent"`) він `canvas` (14,3:1): жовтий контур на жовтому не видно.
 - Обкладинка завжди має пропорцію `aspect-cover` (16:9), зайве обрізається по краях.
 
 ## Токени

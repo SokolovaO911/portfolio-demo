@@ -57,7 +57,7 @@ export default async function ProjectPage({ params }: { params: Promise<Params> 
       <Image
         src={project.caseImage}
         alt={project.caseImageAlt}
-        sizes="(min-width: 1120px) 1072px, 100vw"
+        sizes="(min-width: 70em) 67em, 100vw"
         className="h-auto w-full"
       />
 
