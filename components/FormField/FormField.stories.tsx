@@ -22,11 +22,11 @@ const meta = {
     disabled: { control: "boolean" },
   },
   args: {
-    label: "Email",
+    label: "E-mail",
     defaultValue: "",
     placeholder: "name@company.com",
     error: false,
-    errorMessage: "Enter a valid email address.",
+    errorMessage: "Enter a valid e-mail address.",
     multiline: false,
     required: false,
     disabled: false,
