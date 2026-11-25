@@ -9,9 +9,9 @@ import { projects } from "./projects/data";
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col gap-8 md:flex-row md:items-start md:gap-0 md:pb-section">
-        <div className="flex md:w-19/60 md:shrink-0">
-          <div aria-hidden="true" className="w-8 shrink-0 md:w-3/19">
+      <section className="flex flex-col gap-8 md:pb-section lg:flex-row lg:items-start lg:gap-0">
+        <div className="flex md:w-1/2 lg:w-19/60 lg:shrink-0">
+          <div aria-hidden="true" className="w-8 shrink-0 lg:w-3/19">
             <Image
               src={decorSquiggle}
               alt=""
@@ -23,11 +23,11 @@ export default function Home() {
             alt="Portrait of Olha Sokolova"
             priority
             sizes="(min-width: 768px) 27vw, 100vw"
-            className="aspect-portrait w-full min-w-0 flex-1 object-cover md:w-auto"
+            className="aspect-portrait w-full min-w-0 flex-1 object-cover lg:w-auto"
           />
         </div>
-        <div aria-hidden="true" className="hidden md:block md:w-1/15 md:shrink-0" />
-        <div className="flex flex-col gap-8 md:flex-1">
+        <div aria-hidden="true" className="hidden lg:block lg:w-1/15 lg:shrink-0" />
+        <div className="flex flex-col gap-8 lg:flex-1">
           <p className="text-lead text-ink">
             Olha Sokolova
             <br />
@@ -40,7 +40,7 @@ export default function Home() {
           <p className="text-lead text-ink">
             Helping people achieve their goals without unnecessary steps
           </p>
-          <div className="grid gap-8 md:inline-grid md:auto-cols-fr md:self-start lg:grid-flow-col lg:gap-section">
+          <div className="grid gap-8 md:grid-cols-2 lg:inline-grid lg:auto-cols-fr lg:grid-flow-col lg:grid-cols-none lg:gap-section lg:self-start">
             <Button href="/projects" size="lg" className="w-full">
               View projects
             </Button>
