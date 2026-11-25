@@ -21,7 +21,8 @@ export default function ProjectsPage() {
             <WorkCard
               className="w-full"
               title={project.title}
-              description={`${project.type}, ${project.duration.toLowerCase()}. ${project.summary}`}
+              meta={project.cardMeta}
+              description={project.summary}
               image={project.cover}
               imageAlt={project.coverAlt}
                 imagePosition={project.coverPosition}

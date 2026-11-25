@@ -13,6 +13,7 @@ export type Project = {
   cover: StaticImageData;
   coverAlt: string;
   coverPosition?: "top" | "center";
+  cardMeta: string;
   caseImage: StaticImageData;
   caseImageAlt: string;
   type: string;
@@ -29,6 +30,7 @@ export const projects: Project[] = [
       "Helping animals find safe temporary homes and connecting them with caring people.",
     cover: coverFosterlink,
     coverAlt: "FosterLink logo",
+    cardMeta: "Mobile app · 1 month",
     coverPosition: "top",
     caseImage: caseFosterlink,
     caseImageAlt: "FosterLink case study: research, flows, wireframes and screens",
@@ -44,6 +46,7 @@ export const projects: Project[] = [
       "Helping people understand their emotions, practice mindfulness, and find inner balance.",
     cover: coverMindfullmood,
     coverAlt: "MindfullMood logo",
+    cardMeta: "Responsive website · 2 months",
     caseImage: caseMindfullmood,
     caseImageAlt:
       "MindfullMood case study: research, personas, journey map, wireframes and screens",
@@ -59,6 +62,7 @@ export const projects: Project[] = [
       "Bringing people together through exciting adventures and unforgettable shared experiences.",
     cover: coverRedesign,
     coverAlt: "SpassImTeam logo",
+    cardMeta: "Website · 2 weeks",
     caseImage: caseRedesign,
     caseImageAlt:
       "Website redesign case study: research, prototype, moodboard, web design and UI kit",
